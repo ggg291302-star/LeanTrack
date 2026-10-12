@@ -67,7 +67,7 @@ struct FoodDetailView: View {
                 .disabled(amount <= 0 || food.nutrients(amount: amount, unit: unit) == nil)
                 .padding(.horizontal, Theme.screenPadding)
                 .padding(.vertical, 10)
-                .background(Theme.background.opacity(0.95))
+                .background(Theme.background.ignoresSafeArea(edges: .bottom))
                 .accessibilityIdentifier("food.add")
         }
         .navigationTitle(isMeal ? "Meal Detail" : "Food Detail")

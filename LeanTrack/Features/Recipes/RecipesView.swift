@@ -51,7 +51,10 @@ struct RecipesView: View {
                             .font(.subheadline).foregroundStyle(Theme.textSecondary).padding(.horizontal, 4)
                     } else {
                         LTCardList(items: myRecipes) { r in
-                            NavigationLink(value: FoodPortion.defaultFor(r.loggedFood)) {
+                            NavigationLink {
+                                FoodDetailView(portion: FoodPortion.defaultFor(r.loggedFood), mode: .log(day: appState.selectedDay),
+                                               meal: MealSlot.suggested(for: .now), onDone: showMessage)
+                            } label: {
                                 FoodRow(portion: FoodPortion.defaultFor(r.loggedFood))
                             }
                             .buttonStyle(.plain)
@@ -64,9 +67,13 @@ struct RecipesView: View {
                     LTCard { Text("No recipes match these filters.").foregroundStyle(Theme.textSecondary) }
                 }
                 ForEach(recipes) { recipe in
-                    NavigationLink(value: recipe) { RecipeCard(recipe: recipe, isFavorite: favoriteIDs.contains(recipe.id)) }
-                        .buttonStyle(.plain)
-                        .accessibilityIdentifier("recipe.\(recipe.id)")
+                    NavigationLink {
+                        RecipeDetailView(recipe: recipe, mode: .log(day: appState.selectedDay), meal: MealSlot.suggested(for: .now), onDone: showMessage)
+                    } label: {
+                        RecipeCard(recipe: recipe, isFavorite: favoriteIDs.contains(recipe.id))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("recipe.\(recipe.id)")
                 }
                 Text("Recipes from the NHLBI (NIH, public domain) and the Wikibooks Cookbook (CC BY-SA 4.0). Photos from Wikimedia Commons; credits are on each recipe.")
                     .font(.caption).foregroundStyle(Theme.textSecondary)
@@ -78,17 +85,11 @@ struct RecipesView: View {
         .searchable(text: $query, prompt: "Search recipes")
         .navigationTitle("Recipes")
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(for: Recipe.self) { recipe in
-            RecipeDetailView(recipe: recipe, mode: .log(day: appState.selectedDay), meal: MealSlot.suggested(for: .now)) { message in
-                if let message { appState.showToast(message) }
-            }
-        }
-        .navigationDestination(for: FoodPortion.self) { portion in
-            FoodDetailView(portion: portion, mode: .log(day: appState.selectedDay), meal: MealSlot.suggested(for: .now)) { message in
-                if let message { appState.showToast(message) }
-            }
-        }
         .sheet(isPresented: $creating) { UserRecipeEditor(recipe: nil) }
+    }
+
+    private func showMessage(_ message: String?) {
+        if let message { appState.showToast(message) }
     }
 
     private func filtered(favoriteIDs: Set<String>) -> [Recipe] {

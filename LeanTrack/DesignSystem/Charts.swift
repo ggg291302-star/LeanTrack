@@ -151,19 +151,18 @@ struct RecipeImage: View {
     var cornerRadius: CGFloat = Theme.cornerRadius
 
     var body: some View {
-        Group {
-            if let url = RecipeLibrary.photoURL(for: recipe), let image = UIImage(contentsOfFile: url.path) {
-                Image(uiImage: image).resizable().scaledToFill()
-            } else {
-                ZStack {
-                    Theme.cardElevated
+        // The photo fills a fixed box as an overlay, so it can never push the layout wider.
+        Theme.cardElevated
+            .frame(height: height)
+            .frame(maxWidth: .infinity)
+            .overlay {
+                if let url = RecipeLibrary.photoURL(for: recipe), let image = UIImage(contentsOfFile: url.path) {
+                    Image(uiImage: image).resizable().scaledToFill()
+                } else {
                     Text("🍽️").font(.system(size: height * 0.35))
                 }
             }
-        }
-        .frame(height: height)
-        .frame(maxWidth: .infinity)
-        .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-        .accessibilityHidden(true)
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .accessibilityHidden(true)
     }
 }
