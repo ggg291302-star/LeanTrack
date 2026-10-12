@@ -1,0 +1,101 @@
+# Builds LeanTrack on a GitHub-hosted Mac:
+#   1. generates the Xcode project from project.yml (XcodeGen)
+#   2. builds an unsigned IPA for real iPhones
+#   3. runs unit + UI tests on an iPhone simulator and saves screenshots
+#   4. uploads the IPA, screenshots and logs as artifacts
+#   5. on a version tag (v0.1, v1.0, ...) also publishes a GitHub Release with the IPA
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write # needed to create Releases on tags
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  XCODE_APP: /Applications/Xcode_26.6.app
+  SIM_DEVICE: iPhone 17 Pro
+  SIM_OS: "26.5"
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s "$XCODE_APP"
+          xcodebuild -version
+
+      - name: Work out version numbers
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+          else
+            VERSION=$(grep -E '^\s+MARKETING_VERSION:' project.yml | head -1 | sed -E 's/.*"(.*)".*/\1/')
+          fi
+          echo "APP_VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "APP_BUILD=$GITHUB_RUN_NUMBER" >> "$GITHUB_ENV"
+          echo "Version $VERSION (build $GITHUB_RUN_NUMBER)"
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build unsigned IPA
+        run: bash scripts/ci/build-ipa.sh "$APP_VERSION" "$APP_BUILD"
+
+      - name: Boot simulator
+        run: bash scripts/ci/boot-simulator.sh "$SIM_DEVICE" "$SIM_OS"
+
+      - name: Run unit and UI tests
+        run: bash scripts/ci/run-tests.sh
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v7
+        with:
+          name: LeanTrack-ipa
+          path: build/LeanTrack.ipa
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: screenshots
+          path: build/screenshots/*.png
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: logs
+          path: |
+            build/*.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Publish GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/LeanTrack.ipa \
+            --title "LeanTrack $GITHUB_REF_NAME" \
+            --notes "Unsigned IPA (version $APP_VERSION, build $APP_BUILD). Install it with Sideloadly; see SIDELOAD-GUIDE.md." \
+            --verify-tag
