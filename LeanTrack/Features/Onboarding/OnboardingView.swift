@@ -118,7 +118,7 @@ struct ProfileDraft {
         p.calorieGoal = calorieGoal
         p.calorieGoalIsManual = manualCalories != nil
         p.macroPreset = macroPreset
-        let percents = macroPreset.percents ?? (20, 50, 30)
+        let percents = macroPreset.percents(calories: Double(calorieGoal), weightKg: weightKg) ?? (25, 45, 30)
         p.proteinPercent = percents.protein
         p.carbsPercent = percents.carbs
         p.fatPercent = percents.fat
@@ -352,14 +352,14 @@ private struct PlanStep: View {
                     ForEach(MacroPreset.allCases.filter { $0 != .custom }) { Text($0.title).tag($0) }
                 }
                 .pickerStyle(.segmented)
-                let p = draft.macroPreset.percents ?? (20, 50, 30)
+                let p = draft.macroPreset.percents(calories: Double(draft.calorieGoal), weightKg: draft.weightKg) ?? (25, 45, 30)
                 let grams = MacroGrams.fromPercents(calories: Double(draft.calorieGoal), protein: p.protein, carbs: p.carbs, fat: p.fat)
                 HStack {
                     MacroGoalPill(name: "Protein", grams: grams.protein, percent: p.protein, color: Theme.protein)
                     MacroGoalPill(name: "Carbs", grams: grams.carbs, percent: p.carbs, color: Theme.carbs)
                     MacroGoalPill(name: "Fat", grams: grams.fat, percent: p.fat, color: Theme.fat)
                 }
-                Text("Protein suggestion: at least \(Format.number(draft.weightKg * 0.8)) g a day (the RDA of 0.8 g per kg of body weight). Custom splits are in Goals.")
+                Text("Protein is set from your weight: \(Format.number(draft.weightKg * (draft.macroPreset.proteinPerKg ?? 1.6))) g a day (\(Format.number(draft.macroPreset.proteinPerKg ?? 1.6, decimals: 1)) g per kg), which helps keep muscle while losing weight. You can change it in Goals.")
                     .font(.caption).foregroundStyle(Theme.textSecondary)
             }
         }

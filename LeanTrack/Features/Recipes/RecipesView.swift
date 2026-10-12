@@ -9,7 +9,7 @@ struct RecipesView: View {
     @State private var query = ""
     @State private var meal: String? = nil
     @State private var under500 = false
-    @State private var highProtein = false
+    @State private var highProtein = true
     @State private var quick = false
     @State private var vegetarian = false
     @State private var favoritesOnly = false
@@ -24,13 +24,13 @@ struct RecipesView: View {
             LazyVStack(alignment: .leading, spacing: 12) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
-                        FilterChip(title: "All", selected: meal == nil) { meal = nil }
+                        FilterChip(title: "💪 High Protein", selected: highProtein) { highProtein.toggle() }
+                        FilterChip(title: "All meals", selected: meal == nil) { meal = nil }
                         ForEach(meals, id: \.key) { m in
                             FilterChip(title: m.title, selected: meal == m.key) { meal = meal == m.key ? nil : m.key }
                         }
                         FilterChip(title: "♥ Favorites", selected: favoritesOnly) { favoritesOnly.toggle() }
                         FilterChip(title: "Under 500 cal", selected: under500) { under500.toggle() }
-                        FilterChip(title: "25 g+ protein", selected: highProtein) { highProtein.toggle() }
                         FilterChip(title: "30 min or less", selected: quick) { quick.toggle() }
                         FilterChip(title: "Vegetarian", selected: vegetarian) { vegetarian.toggle() }
                     }
@@ -75,7 +75,7 @@ struct RecipesView: View {
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("recipe.\(recipe.id)")
                 }
-                Text("Recipes from the NHLBI (NIH, public domain) and the Wikibooks Cookbook (CC BY-SA 4.0). Photos from Wikimedia Commons; credits are on each recipe.")
+                Text("Healthy recipes only: no desserts, and at most 700 calories, 10 g saturated fat and 25 g sugar a serving. High Protein means 20 g+ protein a serving (or 15 g+ with 30% of calories from protein). Recipes from the NHLBI (NIH, public domain) and the Wikibooks Cookbook (CC BY-SA 4.0); photos from Wikimedia Commons, credited on each recipe.")
                     .font(.caption).foregroundStyle(Theme.textSecondary)
             }
             .padding(.horizontal, Theme.screenPadding)
@@ -100,10 +100,13 @@ struct RecipesView: View {
             if let meal, !r.meals.contains(meal) { return false }
             if favoritesOnly && !favoriteIDs.contains(r.id) { return false }
             if under500 && (r.nutritionPerServing.kcal ?? .infinity) >= 500 { return false }
-            if highProtein && (r.nutritionPerServing.protein ?? 0) < 25 { return false }
+            if highProtein && !r.isHighProtein { return false }
             if quick && (r.minutes ?? .max) > 30 { return false }
             if vegetarian && !r.tags.contains("vegetarian") { return false }
             return true
+        }
+        .sorted { a, b in
+            highProtein ? (a.nutritionPerServing.protein ?? 0) > (b.nutritionPerServing.protein ?? 0) : a.title < b.title
         }
     }
 }

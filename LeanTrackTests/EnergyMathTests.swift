@@ -78,8 +78,21 @@ final class EnergyMathTests: XCTestCase {
         XCTAssertEqual(g.carbs, 250, accuracy: 1e-9)
         XCTAssertEqual(g.fat, 2000 * 0.3 / 9, accuracy: 1e-9)
         for preset in MacroPreset.allCases {
-            if let p = preset.percents { XCTAssertEqual(p.protein + p.carbs + p.fat, 100, "\(preset)") }
+            if let p = preset.percents(calories: 1800, weightKg: 62) { XCTAssertEqual(p.protein + p.carbs + p.fat, 100, "\(preset)") }
         }
+    }
+
+    func testProteinFollowsBodyWeight() throws {
+        // 136 lb (61.7 kg) on 1,600 calories: 1.6 g/kg is about 99 g -> 25% of calories -> 100 g.
+        let kg = UnitConversion.kilograms(fromPounds: 136)
+        let balanced = try XCTUnwrap(MacroPreset.balanced.percents(calories: 1600, weightKg: kg))
+        let grams = MacroGrams.fromPercents(calories: 1600, protein: balanced.protein, carbs: balanced.carbs, fat: balanced.fat)
+        XCTAssertEqual(grams.protein, 100, accuracy: 5)
+        let high = try XCTUnwrap(MacroPreset.highProtein.percents(calories: 1600, weightKg: kg))
+        XCTAssertGreaterThan(high.protein, balanced.protein)
+        XCTAssertNil(MacroPreset.custom.percents(calories: 1600, weightKg: kg))
+        // Kept between 10% and 40% of calories.
+        XCTAssertEqual(MacroPreset.balanced.percents(calories: 1200, weightKg: 150)?.protein, 40)
     }
 
     func testBMIFormula() {

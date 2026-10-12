@@ -29,8 +29,7 @@ struct SettingsView: View {
             .listRowBackground(Theme.card)
 
             Section {
-                link("externaldrive", "Food Database", value: KeychainStore.has(.usdaAPIKey) ? "Own key" : nil) { FoodDatabaseSettingsView() }
-                link("sparkles", "AI Photo Estimates", value: KeychainStore.has(.anthropicAPIKey) ? "On" : "Off") { AIPhotoSettingsView() }
+                link("externaldrive", "Food Database") { FoodDatabaseSettingsView() }
                 link("arrow.up.doc", "Backup & Restore") { BackupView() }
             }
             .listRowBackground(Theme.card)
@@ -253,9 +252,6 @@ struct NotificationsSettingsView: View {
 
 struct FoodDatabaseSettingsView: View {
     @AppStorage("openFoodFactsEnabled") private var openFoodFactsEnabled = true
-    @State private var keyText = ""
-    @State private var hasKey = KeychainStore.has(.usdaAPIKey)
-    @State private var message: String?
 
     var body: some View {
         let db = FoodDatabase.shared
@@ -271,35 +267,13 @@ struct FoodDatabaseSettingsView: View {
             } header: { Text("Built-in USDA database (works offline)") }
 
             Section {
-                if hasKey {
-                    Label("Your own key is saved in the iOS Keychain.", systemImage: "checkmark.seal.fill").foregroundStyle(Theme.positive)
-                    Button("Remove Key", role: .destructive) {
-                        KeychainStore.set(nil, for: .usdaAPIKey)
-                        hasKey = false
-                        message = "Removed. LeanTrack uses the shared DEMO_KEY again."
-                    }
-                } else {
-                    SecureField("Paste your api.data.gov key", text: $keyText)
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                        .accessibilityIdentifier("settings.usdaKey")
-                    Button("Save Key") {
-                        if KeychainStore.set(keyText, for: .usdaAPIKey) {
-                            hasKey = KeychainStore.has(.usdaAPIKey)
-                            keyText = ""
-                            message = "Saved in the Keychain."
-                        } else {
-                            message = "The Keychain didn't accept the key. Please try again."
-                        }
-                    }
-                    .disabled(keyText.trimmingCharacters(in: .whitespaces).count < 10)
-                }
-                if let message { Text(message).font(.caption).foregroundStyle(Theme.textSecondary) }
-                Link("Get a free USDA key (takes a minute)", destination: URL(string: "https://fdc.nal.usda.gov/api-key-signup")!)
+                LabeledContent("Status", value: USDAClient.usingDemoKey ? "Shared demo key" : "Ready")
             } header: {
-                Text("USDA FoodData Central API (online brand-name foods)")
+                Text("USDA FoodData Central (online brand-name foods)")
             } footer: {
-                Text("Without a key, LeanTrack uses USDA's shared DEMO_KEY, which allows about 30 searches an hour. A free key allows 1,000 an hour. Type it here yourself; it's stored only in this iPhone's Keychain, never in backups or anywhere else.")
+                Text(USDAClient.usingDemoKey
+                     ? "This build uses USDA's shared demo key, which allows about 30 searches an hour."
+                     : "LeanTrack's USDA key is built in, so brand-name search and barcodes work without any setup (up to 1,000 searches an hour).")
             }
 
             Section {
@@ -309,63 +283,6 @@ struct FoodDatabaseSettingsView: View {
             }
         }
         .navigationTitle("Food Database")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-// MARK: - AI photo estimates
-
-struct AIPhotoSettingsView: View {
-    @State private var keyText = ""
-    @State private var hasKey = KeychainStore.has(.anthropicAPIKey)
-    @State private var message: String?
-
-    var body: some View {
-        Form {
-            Section {
-                Text("Take a photo of your meal and Claude (Anthropic's AI) splits it into foods and estimates how many grams of each are on the plate. LeanTrack then looks up each food in the USDA database for the calories and nutrients, and you can adjust anything before adding it.")
-                    .font(.subheadline)
-            }
-            Section {
-                if hasKey {
-                    Label("AI Photo Estimates are on. Your key is in the iOS Keychain.", systemImage: "checkmark.seal.fill").foregroundStyle(Theme.positive)
-                    Button("Remove Key", role: .destructive) {
-                        KeychainStore.set(nil, for: .anthropicAPIKey)
-                        hasKey = false
-                        message = "Removed. Photos now use only the on-device check."
-                    }
-                } else {
-                    SecureField("Paste your Anthropic API key", text: $keyText)
-                        .textInputAutocapitalization(.never)
-                        .autocorrectionDisabled()
-                        .accessibilityIdentifier("settings.anthropicKey")
-                    Button("Save Key") {
-                        if KeychainStore.set(keyText, for: .anthropicAPIKey) {
-                            hasKey = KeychainStore.has(.anthropicAPIKey)
-                            keyText = ""
-                            message = "Saved. Take a food photo from Add Food → camera to try it."
-                        } else {
-                            message = "The Keychain didn't accept the key. Please try again."
-                        }
-                    }
-                    .disabled(keyText.trimmingCharacters(in: .whitespaces).count < 20)
-                }
-                if let message { Text(message).font(.caption).foregroundStyle(Theme.textSecondary) }
-                Link("Get an API key from Anthropic", destination: URL(string: "https://platform.claude.com/settings/keys")!)
-            } header: {
-                Text("Anthropic API key")
-            } footer: {
-                Text("Type or paste the key here yourself; never share it in a chat or message. It's stored only in this iPhone's Keychain and is never included in backups.")
-            }
-            Section("Cost and privacy") {
-                Text("Anthropic bills your account for each photo you analyze (usually a few cents per photo, using the \(ClaudeFoodEstimator.model) model). You can set a spending limit in your Anthropic account.")
-                Text("A photo is sent to Anthropic only when you take or choose one in Add Food while AI is on. It's sent over an encrypted connection, resized to 1,024 pixels, with no other information about you.")
-                Text("Without a key, LeanTrack still recognizes common foods on-device with Apple's Vision framework (nothing leaves your iPhone), but it can't estimate portion sizes.")
-            }
-            .font(.subheadline)
-            .foregroundStyle(Theme.textSecondary)
-        }
-        .navigationTitle("AI Photo Estimates")
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -464,7 +381,7 @@ struct HelpView: View {
         FAQ("The app stopped opening after a week.", "Apps sideloaded with a free Apple ID expire after 7 days. Re-sign it with Sideloadly (connect the iPhone and sideload the same IPA again); your data stays as long as you don't delete the app."),
         FAQ("How do I keep my data safe?", "Settings → Backup & Restore → Create Backup, then save the file to Files or iCloud Drive. Do this before reinstalling or switching phones."),
         FAQ("Why isn't a barcode found?", "Not every product is in Open Food Facts or USDA's branded database. Create a custom food from the label; LeanTrack remembers the barcode for next time."),
-        FAQ("How accurate are photo estimates?", "The on-device check names common foods but can't measure portions. AI estimates (with your own Anthropic key) also guess the grams from the photo, which is helpful but approximate, especially for oils, sauces and food you can't see."),
+        FAQ("How do food photos work?", "Your iPhone recognizes common foods in the photo itself (nothing is uploaded) and suggests matching USDA foods. A photo can't measure portion size, so you choose the amount."),
     ]
 
     var body: some View {
@@ -513,7 +430,6 @@ struct AboutView: View {
         Source(name: "NICE guideline NG246", use: "Waist-to-height ratio bands", license: "Cited reference values", url: "https://www.nice.org.uk/guidance/ng246"),
         Source(name: "NIST Handbook 44", use: "Unit conversions", license: "Public domain (U.S. government)", url: "https://www.nist.gov/pml/owm/nist-handbook-44-current-edition"),
         Source(name: "Apple Vision", use: "On-device food recognition in photos", license: "Part of iOS", url: "https://developer.apple.com/documentation/vision"),
-        Source(name: "Anthropic Claude API (optional)", use: "AI portion estimates from photos, with your own key", license: "Anthropic terms", url: "https://www.anthropic.com/legal"),
     ]
 
     var body: some View {

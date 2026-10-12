@@ -14,10 +14,10 @@ enum OnlineFoodError: LocalizedError, Equatable {
             "You're offline. The 13,000+ built-in USDA foods still work; brand-name foods and barcodes need the internet."
         case .rateLimited(let source, let demo):
             demo
-                ? "\(source) is busy: the shared free key allows about 30 searches an hour. Add your own free USDA key in Settings → Food Database."
+                ? "\(source) is busy: the shared free key allows about 30 searches an hour. Try again later."
                 : "\(source) asked LeanTrack to slow down. Try again in a minute."
         case .badKey:
-            "USDA rejected the API key. Check it in Settings → Food Database."
+            "USDA rejected the app's API key. Built-in foods still work; brand-name search will be back after an update."
         case .server(let source, let status):
             "\(source) didn't answer properly (error \(status)). Try again later."
         case .unreadable(let source):
@@ -112,11 +112,12 @@ enum Barcode {
 // MARK: - USDA FoodData Central (online, branded foods)
 
 /// USDA FoodData Central API. https://fdc.nal.usda.gov/api-guide (data: CC0 public domain).
-/// Uses the owner's key from the Keychain, or the shared DEMO_KEY (about 30 requests an hour).
+/// Uses the owner's key built into the app (BuildConfig, from a GitHub secret), or the shared
+/// DEMO_KEY (about 30 requests an hour) when the build has no key.
 enum USDAClient {
     static let source = "USDA FoodData Central"
-    static var apiKey: String { KeychainStore.string(for: .usdaAPIKey) ?? "DEMO_KEY" }
-    static var usingDemoKey: Bool { !KeychainStore.has(.usdaAPIKey) }
+    static var apiKey: String { KeychainStore.string(for: .usdaAPIKey) ?? BuildConfig.usdaAPIKey ?? "DEMO_KEY" }
+    static var usingDemoKey: Bool { apiKey == "DEMO_KEY" }
 
     struct SearchResponse: Decodable {
         var foods: [BrandedFood]?
@@ -240,7 +241,7 @@ enum USDAClient {
 /// Open Food Facts: https://world.openfoodfacts.org (database: ODbL; product images: CC BY-SA).
 enum OpenFoodFactsClient {
     static let source = "Open Food Facts"
-    static let fields = "code,product_name,product_name_en,brands,nutriments,serving_size,serving_quantity,image_front_small_url"
+    static let fields = "code,product_name,product_name_en,brands,nutriments,serving_size,serving_quantity,nutrition_data_per,image_front_small_url"
 
     static func product(barcode: String) async throws -> LoggedFood? {
         for code in Barcode.candidates(barcode).prefix(3) {
@@ -303,13 +304,21 @@ enum OpenFoodFactsClient {
     static func loggedFood(_ product: [String: Any]) -> LoggedFood? {
         let name = [product["product_name"], product["product_name_en"]].compactMap { $0 as? String }.first { !$0.isEmpty }
         guard let name, let nutriments = product["nutriments"] as? [String: Any] else { return nil }
+        // When the label was entered per serving (as on US labels), use those numbers and work out
+        // per 100 g from the serving size. The `_100g` fields of such entries are sometimes wrong.
+        let servingGrams = number(product["serving_quantity"]).flatMap { $0 > 0 ? $0 : nil }
+        let perServing = (product["nutrition_data_per"] as? String) == "serving"
+            && servingGrams != nil && number(nutriments["energy-kcal_serving"]) != nil
+        let suffix = perServing ? "_serving" : "_100g"
+        let factor = perServing ? 100 / (servingGrams ?? 100) : 1
         var per100 = Nutrients()
         for info in NutrientInfo.all {
-            guard let off = info.offName, let value = number(nutriments["\(off)_100g"]) else { continue }
-            per100[keyPath: info.keyPath] = info.unit == "kcal" ? value : NutrientInfo.convert(value, from: "g", to: info.unit)
+            guard let off = info.offName, let value = number(nutriments["\(off)\(suffix)"]) else { continue }
+            let converted = info.unit == "kcal" ? value : NutrientInfo.convert(value, from: "g", to: info.unit)
+            per100[keyPath: info.keyPath] = converted.map { $0 * factor }
         }
-        if per100.kcal == nil, let kj = number(nutriments["energy_100g"]) { per100.kcal = kj / 4.184 }
-        guard per100.kcal != nil else { return nil }
+        if per100.kcal == nil, let kj = number(nutriments["energy\(suffix)"]) { per100.kcal = kj / 4.184 * factor }
+        guard let kcal = per100.kcal, kcal <= 900 else { return nil } // over 900 kcal per 100 g is impossible (pure fat is 900)
 
         var units: [ServingUnit] = []
         if let grams = number(product["serving_quantity"]), grams > 0 {
@@ -358,15 +367,15 @@ enum BrandSearch {
         return result
     }
 
-    /// Barcode lookup: Open Food Facts first, then USDA Branded.
+    /// Barcode lookup: USDA Branded first (label data from the manufacturers), then Open Food Facts.
     static func lookup(barcode: String, includeOpenFoodFacts: Bool) async throws -> LoggedFood? {
         var firstError: Error?
+        do { if let food = try await USDAClient.lookup(barcode: barcode) { return food } }
+        catch { firstError = error }
         if includeOpenFoodFacts {
             do { if let food = try await OpenFoodFactsClient.product(barcode: barcode) { return food } }
-            catch { firstError = error }
+            catch { if firstError == nil || OnlineFoodError.from(firstError!) == OnlineFoodError.offline { firstError = error } }
         }
-        do { if let food = try await USDAClient.lookup(barcode: barcode) { return food } }
-        catch { if firstError == nil || OnlineFoodError.from(error) != OnlineFoodError.offline { firstError = error } }
         if let firstError {
             if let friendly = OnlineFoodError.from(firstError) { throw friendly }
             throw firstError

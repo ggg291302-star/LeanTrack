@@ -120,6 +120,7 @@ struct AddWeighInSheet: View {
                     if let s = suggestion, let p = profiles.first {
                         p.calorieGoal = s
                         p.fiberGoalG = NutritionMath.fiberGoal(calories: s)
+                        p.applyMacroPreset()
                         try? context.save()
                     }
                     suggestion = nil

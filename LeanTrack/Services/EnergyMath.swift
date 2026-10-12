@@ -179,9 +179,12 @@ struct MacroGrams: Equatable, Sendable {
     }
 }
 
-/// Macro splits. Balanced and High Protein stay inside the National Academies' Acceptable
-/// Macronutrient Distribution Ranges (protein 10–35%, carbs 45–65%, fat 20–35% of calories;
-/// High Protein uses the low end for carbs); Low Carb is intentionally below them.
+/// Macro splits. Protein comes from body weight, not a flat percent:
+/// - 1.6 g per kg a day (Balanced, Low Carb): where extra protein stopped adding muscle in a
+///   meta-analysis of 49 trials (Morton RW et al., Br J Sports Med 2018;52:376-384).
+/// - 2.0 g per kg (High Protein): top of the ISSN position stand's 1.4-2.0 g/kg for active people
+///   (Jager R et al., J Int Soc Sports Nutr 2017;14:20).
+/// Fat (or carbs, for Low Carb) is a fixed share and the third macro fills the rest.
 enum MacroPreset: String, Codable, CaseIterable, Identifiable, Sendable {
     case balanced, highProtein, lowCarb, custom
     var id: String { rawValue }
@@ -195,13 +198,25 @@ enum MacroPreset: String, Codable, CaseIterable, Identifiable, Sendable {
         }
     }
 
-    /// Protein, carbs, fat in % of calories.
-    var percents: (protein: Double, carbs: Double, fat: Double)? {
+    /// Protein in grams per kg of body weight.
+    var proteinPerKg: Double? {
         switch self {
-        case .balanced: (20, 50, 30)
-        case .highProtein: (30, 45, 25)
-        case .lowCarb: (30, 25, 45)
+        case .balanced, .lowCarb: 1.6
+        case .highProtein: 2.0
         case .custom: nil
+        }
+    }
+
+    /// Protein, carbs and fat in % of calories for a calorie goal and body weight. Protein is kept
+    /// between 10% and 40% of calories, and the three always add up to 100.
+    func percents(calories: Double, weightKg: Double) -> (protein: Double, carbs: Double, fat: Double)? {
+        guard let perKg = proteinPerKg, calories > 0, weightKg > 0 else { return nil }
+        let protein = min(40, max(10, (weightKg * perKg * 4 / calories * 100).rounded()))
+        switch self {
+        case .balanced: return (protein, 100 - protein - 30, 30)
+        case .highProtein: return (protein, 100 - protein - 25, 25)
+        case .lowCarb: return (protein, 25, 100 - protein - 25)
+        case .custom: return nil
         }
     }
 }

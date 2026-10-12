@@ -47,6 +47,22 @@ final class OnlineFoodsTests: XCTestCase {
         XCTAssertEqual(try XCTUnwrap(food.nutrients(amount: 1, unit: food.units[0])?.kcal), 80.85, accuracy: 1e-9)
     }
 
+    func testOpenFoodFactsPerServingLabelIsReadPerServing() throws {
+        // A 414 ml protein drink whose label (220 cal, 30 g protein a bottle) was entered "per serving",
+        // with the same numbers wrongly copied into the per-100 g fields.
+        let json = """
+        {"code":"818290019999","status":1,"product":{"product_name":"Protein Drink","brands":"Chobani",
+         "serving_quantity":414,"serving_size":"1 bottle (414 ml)","nutrition_data_per":"serving",
+         "nutriments":{"energy-kcal_100g":220,"proteins_100g":30,"energy-kcal_serving":220,"proteins_serving":30,
+                       "carbohydrates_serving":11,"fat_serving":4.5,"sodium_serving":0.26}}}
+        """
+        let food = try XCTUnwrap(OpenFoodFactsClient.parseProductResponse(Data(json.utf8)))
+        let bottle = try XCTUnwrap(food.nutrients(amount: 1, unit: food.units[0]))
+        XCTAssertEqual(try XCTUnwrap(bottle.kcal), 220, accuracy: 0.01)
+        XCTAssertEqual(try XCTUnwrap(bottle.protein), 30, accuracy: 0.01)
+        XCTAssertEqual(try XCTUnwrap(bottle.sodium), 260, accuracy: 0.01)
+    }
+
     func testOpenFoodFactsNotFoundAndKilojoules() throws {
         XCTAssertNil(try OpenFoodFactsClient.parseProductResponse(Data(#"{"code":"1","status":0,"status_verbose":"product not found"}"#.utf8)))
         let kj = try XCTUnwrap(OpenFoodFactsClient.loggedFood(["product_name": "Bread", "nutriments": ["energy_100g": 1046.0]]))

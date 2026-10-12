@@ -17,6 +17,7 @@ struct FoodDetailView: View {
     @State private var editingMeal: SavedMeal?
     @State private var editingRecipe: UserRecipe?
     @State private var confirmingDelete = false
+    @State private var correcting = false
     @Query private var favorites: [FavoriteItem]
 
     init(portion: FoodPortion, mode: FoodChoiceMode, meal: MealSlot, onDone: @escaping (String?) -> Void) {
@@ -53,6 +54,13 @@ struct FoodDetailView: View {
                         MealPicker(meal: $meal)
                     }
                 }
+                if food.kind == .openFoodFacts || food.kind == .usdaBranded {
+                    Button { correcting = true } label: {
+                        Label("Numbers wrong? Fix them from the label", systemImage: "square.and.pencil")
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .accessibilityIdentifier("food.correct")
+                }
                 NutrientFactsCard(nutrients: nutrients, title: "Nutrition Facts for \(portion.amountText)")
                 SourceCard(food: food)
             }
@@ -77,6 +85,12 @@ struct FoodDetailView: View {
         }
         .sheet(item: $editingCustomFood) { custom in
             CustomFoodEditor(food: custom) { saved in food = saved.loggedFood; resetUnitIfNeeded() }
+        }
+        .sheet(isPresented: $correcting) {
+            CustomFoodEditor(food: nil, prefill: food) { saved in
+                food = saved.loggedFood
+                if let first = food.units.first { unit = first; amount = 1 }
+            }
         }
         .sheet(item: $editingMeal) { meal in
             SavedMealEditor(meal: meal) { saved in food = saved.loggedFood }

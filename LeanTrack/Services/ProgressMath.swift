@@ -18,6 +18,15 @@ extension UserProfile {
         paceLbPerWeek = plan.paceLbPerWeek
         if !calorieGoalIsManual { calorieGoal = plan.calories }
         fiberGoalG = NutritionMath.fiberGoal(calories: calorieGoal)
+        applyMacroPreset()
+    }
+
+    /// Re-applies the macro preset, so protein follows body weight and the calorie goal.
+    /// A custom split is left alone.
+    func applyMacroPreset() {
+        if let p = macroPreset.percents(calories: Double(calorieGoal), weightKg: currentWeightKg) {
+            setMacroPercents(protein: p.protein, carbs: p.carbs, fat: p.fat)
+        }
     }
 
     func setMacroPercents(protein: Double, carbs: Double, fat: Double) {
@@ -50,6 +59,7 @@ enum WeightService {
         descriptor.fetchLimit = 1
         if let latest = try? context.fetch(descriptor).first {
             profile.currentWeightKg = latest.weightKg
+            profile.applyMacroPreset()
             try? context.save()
         }
     }

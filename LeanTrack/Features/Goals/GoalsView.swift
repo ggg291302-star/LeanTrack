@@ -281,7 +281,7 @@ struct MacroGoalsView: View {
             Section("Preset") {
                 Picker("Split", selection: Binding(get: { profile.macroPreset }, set: { preset in
                     profile.macroPreset = preset
-                    if let p = preset.percents { profile.setMacroPercents(protein: p.protein, carbs: p.carbs, fat: p.fat) }
+                    profile.applyMacroPreset()
                     try? context.save()
                 })) {
                     ForEach(MacroPreset.allCases) { Text($0.title).tag($0) }
@@ -301,7 +301,7 @@ struct MacroGoalsView: View {
                 Text("Change a percent or the grams; the other macro adjusts so the total stays 100%. Protein and carbs have 4 calories per gram, fat has 9.")
             }
             Section {
-                Text("Protein: at least \(Format.number(profile.currentWeightKg * 0.8)) g a day is the RDA for your weight (0.8 g per kg). The National Academies' healthy ranges are protein 10–35%, carbs 45–65% and fat 20–35% of calories. Low Carb goes below the carb range on purpose.")
+                Text("Presets set protein from your weight: Balanced and Low Carb use 1.6 g per kg (\(Format.number(profile.currentWeightKg * 1.6)) g for you), the amount shown to help keep muscle while losing weight; High Protein uses 2.0 g per kg (\(Format.number(profile.currentWeightKg * 2)) g). Protein updates when you log a new weight. The bare minimum (RDA) is 0.8 g per kg.")
                     .font(.caption).foregroundStyle(Theme.textSecondary)
             }
         }

@@ -84,7 +84,7 @@ Ingredients without a measurable amount ("salt to taste", "optional", "a handful
 ## USDA FoodData Central API (online)
 - **API:** https://fdc.nal.usda.gov/api-guide/ (`/fdc/v1/foods/search`, data type "Branded")
 - **License:** public domain (CC0 1.0), same as the downloaded datasets.
-- **Key:** the owner can type their own free api.data.gov key into **Settings → Food Database**. It's stored only in the iOS Keychain on the phone, never in the code, the repo or backups. Without a key, the app uses USDA's shared `DEMO_KEY` (about 30 requests an hour and 50 a day per IP address) and says so when the limit is hit.
+- **Key:** the owner's free api.data.gov key is kept as a GitHub Actions secret (`USDA_API_KEY`) and added to the app only at build time (`scripts/ci/inject-secrets.py`); it's never in the code or the repo. Builds without the secret fall back to USDA's shared `DEMO_KEY` (about 30 requests an hour). Barcodes are looked up in USDA Branded first, because its label data comes from the manufacturers.
 - **How LeanTrack uses it:** brand-name search (Add Food → search → "Brands (online)") and barcode lookups after Open Food Facts. Branded nutrient values are per 100 g (or 100 ml); vitamin D in IU is converted at 40 IU = 1 µg; vitamin A in IU is not converted (it can't be turned into RAE reliably), so it shows "—".
 
 ## Open Food Facts (online, optional)
@@ -112,4 +112,9 @@ Ingredients without a measurable amount ("salt to taste", "optional", "a handful
 
 ## Photos of food
 - **On-device:** Apple's Vision framework (`VNClassifyImageRequest`) runs on the iPhone; no photo leaves the phone. It names what it sees, and the app searches the built-in USDA foods for matches. It can't measure portions.
-- **Optional AI estimate:** only when the owner has typed their own Anthropic API key into **Settings → AI Photo Estimates** (stored in the iOS Keychain). The photo, resized to at most 1,024 px, is sent to the Claude API (`claude-opus-5-5`, https://docs.anthropic.com/) with a request to name each food and estimate its edible weight in grams. **Claude does not supply calories:** each food is matched to the built-in USDA database and the calories and nutrients come from USDA. The owner can change the matched food and the grams before logging. Anthropic bills the owner's account for each photo.
+- **AI estimate (switched off for now; the owner chose not to pay for an API key):** when enabled, only with the owner's own Anthropic API key into **Settings → AI Photo Estimates** (stored in the iOS Keychain). The photo, resized to at most 1,024 px, is sent to the Claude API (`claude-opus-5-5`, https://docs.anthropic.com/) with a request to name each food and estimate its edible weight in grams. **Claude does not supply calories:** each food is matched to the built-in USDA database and the calories and nutrients come from USDA. The owner can change the matched food and the grams before logging. Anthropic bills the owner's account for each photo.
+
+## What the app shows from these sources
+- **Recipes:** only healthy ones are shown: no desserts or sweet baked goods, and at most 700 calories, 10 g saturated fat (half the Daily Value) and 25 g sugar a serving (102 of 125). "High Protein" means 20 g+ protein a serving, or 15 g+ with at least 30% of calories from protein.
+- **Protein goal:** set from body weight: 1.6 g per kg (Balanced, Low Carb; Morton RW et al., Br J Sports Med 2018;52:376-384) or 2.0 g per kg (High Protein; ISSN position stand, Jager R et al., J Int Soc Sports Nutr 2017;14:20), kept between 10% and 40% of calories. The RDA of 0.8 g/kg is shown as the minimum.
+- **Open Food Facts entries** marked "per serving" are read from their per-serving values. If any online numbers are wrong, the owner can correct them from the package label; the corrected food is saved as a custom food with the same barcode and used for later scans.

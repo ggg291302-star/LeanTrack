@@ -45,6 +45,22 @@ struct Recipe: Codable, Identifiable, Hashable, Sendable {
     var printedNutritionPerServing: [String: Double]?
     var photo: Photo?
 
+    /// 20 g+ protein a serving, or 15 g+ with at least 30% of calories from protein.
+    var isHighProtein: Bool {
+        let p = nutritionPerServing.protein ?? 0
+        let kcal = nutritionPerServing.kcal ?? 0
+        return p >= 20 || (p >= 15 && kcal > 0 && p * 4 / kcal >= 0.3)
+    }
+
+    /// LeanTrack only shows recipes that fit a healthy diet: no desserts or sweet baked goods,
+    /// at most 10 g saturated fat (half the Daily Value), 25 g sugar and 700 calories a serving.
+    var isHealthyChoice: Bool {
+        let n = nutritionPerServing
+        if (n.satFat ?? 0) > 10 || (n.kcal ?? 0) > 700 || (n.sugar ?? 0) > 25 { return false }
+        let sweets = #"\b(cake|cakes|cookie|cookies|brownie|brownies|muffin|muffins|banana bread|zucchini bread|fudge|pie|cobbler|crisp|tart|party mix|hash browns|doughnut|donut|frosting|candy|ice cream|pudding)\b"#
+        return title.range(of: sweets, options: [.regularExpression, .caseInsensitive]) == nil
+    }
+
     var minutes: Int? {
         if let totalMinutes { return totalMinutes }
         let sum = (prepMinutes ?? 0) + (cookMinutes ?? 0)
@@ -67,7 +83,7 @@ struct RecipeLibrary: Sendable {
     init(url: URL? = Bundle.main.url(forResource: "recipes", withExtension: "json", subdirectory: "Data")) throws {
         guard let url else { throw CocoaError(.fileNoSuchFile) }
         let file = try JSONDecoder().decode(File.self, from: Data(contentsOf: url))
-        recipes = file.recipes
+        recipes = file.recipes.filter(\.isHealthyChoice)
         generated = file.generated
     }
 

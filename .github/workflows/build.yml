@@ -54,6 +54,11 @@ jobs:
       - name: Generate Xcode project
         run: xcodegen generate
 
+      - name: Add USDA key from secrets
+        env:
+          USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+        run: python3 scripts/ci/inject-secrets.py
+
       - name: Build unsigned IPA
         run: bash scripts/ci/build-ipa.sh "$APP_VERSION" "$APP_BUILD"
 

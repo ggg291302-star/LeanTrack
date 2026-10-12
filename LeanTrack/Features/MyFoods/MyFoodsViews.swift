@@ -122,10 +122,26 @@ struct CustomFoodEditor: View {
     private let mainKeys = ["kcal", "protein", "carbs", "fat"]
     private let moreKeys = ["fiber", "sugar", "sat_fat", "trans_fat", "cholesterol", "sodium", "potassium", "calcium", "iron", "vit_d", "caffeine"]
 
-    init(food: CustomFood?, barcode: String = "", onSave: ((CustomFood) -> Void)? = nil) {
+    init(food: CustomFood?, barcode: String = "", prefill: LoggedFood? = nil, onSave: ((CustomFood) -> Void)? = nil) {
         existing = food
         self.onSave = onSave
-        if let food {
+        if let prefill, food == nil {
+            // Start from an online food so the owner only corrects what's wrong on the label.
+            _name = State(initialValue: prefill.name)
+            _brand = State(initialValue: prefill.detail ?? "")
+            _barcode = State(initialValue: prefill.barcode ?? barcode)
+            let serving = prefill.units.first { $0.name.hasPrefix("serving") } ?? prefill.units.first
+            if let serving, let grams = serving.grams, serving.name.hasPrefix("serving") {
+                let label = serving.name.replacingOccurrences(of: "serving (", with: "").dropLast()
+                _servingName = State(initialValue: String(label))
+                _servingGrams = State(initialValue: grams)
+            }
+            var v: [String: Double] = [:]
+            if let serving, let n = prefill.nutrients(amount: 1, unit: serving) {
+                for info in NutrientInfo.all { if let value = n[keyPath: info.keyPath] { v[info.key] = (value * 10).rounded() / 10 } }
+            }
+            _values = State(initialValue: v)
+        } else if let food {
             _name = State(initialValue: food.name)
             _brand = State(initialValue: food.brand)
             _barcode = State(initialValue: food.barcode)
