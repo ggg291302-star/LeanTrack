@@ -64,6 +64,12 @@ Apps installed with a **free** Apple ID stop opening after **7 days**. Your data
 - At most **3 sideloaded apps** at the same time on one phone.
 - At most **10 new app IDs per 7 days**. Reinstalling LeanTrack reuses its ID, so this rarely matters.
 
+## 8. Optional extras (type keys only into the app, never into a chat)
+
+- **More brand-name searches:** get a free key at https://fdc.nal.usda.gov/api-key-signup, then paste it in LeanTrack: **More → Settings → Food Database → Save Key**. Without it, brand searches share USDA's demo key (about 30 an hour).
+- **AI photo estimates:** create an API key at https://platform.claude.com/settings/keys (Anthropic bills your account a few cents per photo; you can set a spending limit there). Paste it in **More → Settings → AI Photo Estimates → Save Key**. Then in Add Food, tap the camera, take a photo, and Claude estimates each food's grams; LeanTrack looks up the calories in the USDA database.
+- Both keys are stored only in the iPhone's Keychain. They're not in backups, so after restoring a backup on a new phone, paste them again.
+
 ## Troubleshooting
 
 | What you see | What to do |

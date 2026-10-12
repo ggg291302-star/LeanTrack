@@ -36,8 +36,11 @@ if os.path.exists(manifest):
     for test in json.load(open(manifest)):
         for a in test.get("attachments", []):
             name = a.get("suggestedHumanReadableName") or a["exportedFileName"]
-            # "01-Home_0_<UUID>.png" -> "01-Home.png"
+            # "01-Home_0_<UUID>.png" -> "01-Home.png". Only our own named screenshots
+            # ("01-Home"...), not Xcode's automatic failure attachments.
             base = name.split("_")[0]
+            if not (len(base) > 3 and base[:2].isdigit() and all(c.isalnum() or c in "-." for c in base)):
+                continue
             dest = os.path.join("build/screenshots", base + ".png")
             if not os.path.exists(dest):
                 shutil.copy(os.path.join(src, a["exportedFileName"]), dest)

@@ -14,8 +14,12 @@ The app shows the same list under **Settings → About → Data Sources**.
 | Wikibooks Cookbook | 71 bundled recipes | CC BY-SA 4.0 | 2026-10-11 |
 | Wikimedia Commons | 118 recipe photos | Per photo: public domain, CC0, CC BY or CC BY-SA | 2026-10-11 |
 | NIST Handbook 44, Appendix C | Unit conversions (lb↔kg, oz↔g, in↔cm, fl oz↔ml) | Public domain (U.S. government work) | 2026-10-11 |
+| USDA FoodData Central API (online) | Brand-name food search and barcode lookups | Public domain (CC0 1.0) | Live, when used |
+| Open Food Facts (online, optional) | Barcode lookups and brand-name food search | Database: ODbL 1.0 · Contents: DbCL 1.0 · Images: CC BY-SA 3.0 | Live, when used |
+| Published formulas and reference values | BMR, TDEE, BMI categories, % Daily Value, fiber, water, macro ranges, waist-to-height | Cited below | — |
+| Apple Vision (on-device) | Naming foods in photos | Part of iOS | — |
+| Anthropic Claude API (optional, owner's own key) | Splitting a food photo into foods and estimating grams | Anthropic's terms | Live, when used |
 
-Planned in later stages (added here when they're built): the USDA FoodData Central API and Open Food Facts (online and barcode search, Stage 3), and the published formulas and cut-offs for BMI, BMR and TDEE (Stage 4).
 
 ---
 
@@ -76,3 +80,36 @@ Ingredients without a measurable amount ("salt to taste", "optional", "a handful
 ## Unit conversions: NIST
 - NIST Handbook 44, Appendix C (General Tables of Units of Measurement): 1 lb = 0.45359237 kg, 1 oz = 28.349523125 g, 1 in = 2.54 cm, 1 US fl oz = 29.5735295625 ml (exact definitions).
 - https://www.nist.gov/pml/owm/nist-handbook-44-current-edition
+
+## USDA FoodData Central API (online)
+- **API:** https://fdc.nal.usda.gov/api-guide/ (`/fdc/v1/foods/search`, data type "Branded")
+- **License:** public domain (CC0 1.0), same as the downloaded datasets.
+- **Key:** the owner can type their own free api.data.gov key into **Settings → Food Database**. It's stored only in the iOS Keychain on the phone, never in the code, the repo or backups. Without a key, the app uses USDA's shared `DEMO_KEY` (about 30 requests an hour and 50 a day per IP address) and says so when the limit is hit.
+- **How LeanTrack uses it:** brand-name search (Add Food → search → "Brands (online)") and barcode lookups after Open Food Facts. Branded nutrient values are per 100 g (or 100 ml); vitamin D in IU is converted at 40 IU = 1 µg; vitamin A in IU is not converted (it can't be turned into RAE reliably), so it shows "—".
+
+## Open Food Facts (online, optional)
+- **Website / API:** https://world.openfoodfacts.org/ · https://openfoodfacts.github.io/openfoodfacts-server/api/
+- **License:** database under the Open Database License (ODbL 1.0); individual contents under the Database Contents License (DbCL 1.0); product images under CC BY-SA 3.0. The app credits "Data © Open Food Facts contributors (ODbL)" on every Open Food Facts food and links to its product page.
+- **How LeanTrack uses it:** first stop for barcode lookups (`/api/v2/product/<barcode>.json`) and part of brand-name search. Nutrients are read from `<nutrient>_100g` fields, which Open Food Facts stores in grams. Vitamin A and folate are not mapped, because labels don't say whether they're RAE/DFE; alcohol is not mapped because it's listed as % by volume. Data is crowd-sourced, so the app asks the owner to check it against the package.
+- **Etiquette:** requests send a `User-Agent` naming the app and its GitHub page (no personal data), searches are debounced, and results are cached for the session. It can be turned off in **Settings → Food Database**.
+
+## Formulas and reference values
+| What | Value | Source |
+|---|---|---|
+| Resting energy (BMR) | Mifflin-St Jeor: 10 × kg + 6.25 × cm − 5 × age + 5 (men) or − 161 (women) | Mifflin MD, St Jeor ST, et al. Am J Clin Nutr. 1990;51(2):241–247. https://pubmed.ncbi.nlm.nih.gov/2305711/ |
+| Total daily burn (TDEE) | BMR × 1.2 / 1.375 / 1.55 / 1.725 / 1.9 | Standard activity factors used with Mifflin-St Jeor |
+| Weight change | About 3,500 kcal per pound (shown in the app as an estimate) | Long-used rule of thumb; the app tells the owner to watch the real trend |
+| Safety guardrails | No suggested goal below 1,200 kcal (women) / 1,500 kcal (men); no loss faster than 2 lb or 1% of body weight a week; no loss plans under 18 or while pregnant/breastfeeding; warning when the goal BMI is under 18.5 | Common clinical guidance (e.g. NIH NHLBI); the app always recommends talking to a doctor |
+| BMI | kg ÷ m²; adult categories under 18.5, 18.5–24.9, 25–29.9, 30–34.9, 35–39.9, 40+ | CDC: https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html |
+| BMI ages 2–19 | LMS percentiles (2000 CDC growth charts); above the 95th percentile: 90 + 10 × Φ((BMI − P95) ÷ sigma); categories at the 5th, 85th and 95th percentiles and 120% of the 95th | CDC: https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html · https://www.cdc.gov/growthcharts/extended-bmi.htm |
+| Under 2 years | BMI not used; WHO weight-for-length charts recommended | CDC |
+| % Daily Value | FDA Daily Values for adults and children 4+ (e.g. sodium 2,300 mg, fiber 28 g, saturated fat 20 g, vitamin D 20 µg, potassium 4,700 mg) | 21 CFR 101.9; https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels |
+| Fiber goal | 14 g per 1,000 kcal | Dietary Guidelines for Americans 2020–2025, https://www.dietaryguidelines.gov/ |
+| Water goal | 2.2 L (women) / 3.0 L (men) of total beverages a day | National Academies, Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate (2005), https://nap.nationalacademies.org/read/10925/chapter/1 |
+| Macro ranges and protein | AMDR: protein 10–35%, carbs 45–65%, fat 20–35%; protein RDA 0.8 g/kg; 4/4/9 kcal per gram | National Academies, Dietary Reference Intakes for Energy and Macronutrients (2005) |
+| Caffeine goal (optional) | 400 mg a day | FDA guidance for healthy adults |
+| Waist-to-height ratio | 0.4–0.49 no increased risk, 0.5–0.59 increased, 0.6+ high | NICE guideline NG246, https://www.nice.org.uk/guidance/ng246 |
+
+## Photos of food
+- **On-device:** Apple's Vision framework (`VNClassifyImageRequest`) runs on the iPhone; no photo leaves the phone. It names what it sees, and the app searches the built-in USDA foods for matches. It can't measure portions.
+- **Optional AI estimate:** only when the owner has typed their own Anthropic API key into **Settings → AI Photo Estimates** (stored in the iOS Keychain). The photo, resized to at most 1,024 px, is sent to the Claude API (`claude-opus-5-5`, https://docs.anthropic.com/) with a request to name each food and estimate its edible weight in grams. **Claude does not supply calories:** each food is matched to the built-in USDA database and the calories and nutrients come from USDA. The owner can change the matched food and the grams before logging. Anthropic bills the owner's account for each photo.

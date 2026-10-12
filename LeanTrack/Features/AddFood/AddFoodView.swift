@@ -461,7 +461,6 @@ private struct LocalSearchResults: View {
                 }
             } else {
                 LTCardList(items: usda) { p in FoodRow(portion: p, onAdd: { quickAdd(p) }).onTapGesture { choose(p) } }
-                    .accessibilityIdentifier("addFood.results")
             }
             if !recipes.isEmpty {
                 LTSectionHeader(title: "Recipes")

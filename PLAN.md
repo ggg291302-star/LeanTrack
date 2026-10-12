@@ -77,35 +77,34 @@ This file is the working checklist. Tick items as they're done so a future sessi
 `node scripts/build-food-db.mjs` → `node scripts/verify-foods.mjs` → `node scripts/fetch-cdc-bmi.mjs` → `node scripts/recipes/fetch-nhlbi.mjs` → `node scripts/recipes/fetch-wikibooks.mjs` → `node scripts/recipes/build-recipes.mjs` → `node scripts/recipes/fetch-photos.mjs` → `node scripts/recipes/build-recipes.mjs` (again, to attach photo credits)
 
 ### Stage 3: Food logging
-- [ ] First-launch setup (profile, goal, pace, units)
-- [ ] Home (ring, macro cards, remaining, today's meals, water card)
-- [ ] Diary (week strip, meal sections, edit, swipe-delete, long-press move/copy, copy from yesterday)
-- [ ] Add Food (Recent, Favorites, Common, Recipes, Brands; search; barcode via VisionKit + AVFoundation fallback; Open Food Facts → USDA Branded → create custom)
-- [ ] Photo food recognition (owner request): camera/photo → on-device Vision classification → matching USDA foods → confirm portion → log
-- [ ] Food / Meal Detail (donut, ingredients, serving picker with real USDA portions, meal picker, Add to Diary, "…" menu)
-- [ ] Recipes (search, filters, detail, scaler, log serving, favorite, open original, my own recipes, optional online section if the terms allow)
-- [ ] Custom foods, saved meals, Favorites, Recent
-- [ ] Screenshots match the reference
-- [ ] Release `v0.3`
+- [x] First-launch setup (profile, goal, pace, units), with a starting weigh-in
+- [x] Home (ring, macro cards, remaining, today's meals, water card, streak, working "Today ▾" calendar)
+- [x] Diary (week strip, meal sections, edit, swipe-delete, long-press move/copy, copy from yesterday, save as meal, exercise)
+- [x] Add Food (Recent, Favorites, Common, Recipes, My Foods, Brands; search; quick add; meal picker)
+- [x] Barcodes: VisionKit DataScanner + AVFoundation fallback + typed entry → Open Food Facts → USDA Branded → create custom food (barcode prefilled)
+- [x] Photo food recognition: on-device Vision suggestions; owner chose "On-device + optional AI upgrade" (2026-10-11): Claude (`claude-opus-5-5`, structured JSON, server-side fallback) estimates foods + grams with the owner's own key from the Keychain; calories always from USDA
+- [x] Food / Meal Detail (donut, ingredients, serving picker with real USDA portions, meal picker, Add to Diary, "…" menu, every nutrient with % DV, source)
+- [x] Recipes (search, filters, detail with photo/credits, scaler, log servings, favorite, open original, my own recipes). TheMealDB online section skipped: not needed with 125 bundled recipes.
+- [x] Custom foods, saved meals, Favorites, Recent
+- [x] USDA API key in Settings → Food Database (Keychain, DEMO_KEY fallback with a clear rate-limit message)
 
 ### Stage 4: Weight, goals, BMI, and charts
-- [ ] Weigh-ins (date, time, note), 7-day trend, projected goal date
-- [ ] Progress (Weight/Calories/Macros, 1W–1Y, goal line, trend line, Average/Change)
-- [ ] Nutrition (Calories/Nutrients/Macros, week chart with goal line, full nutrient details vs daily values)
-- [ ] Goals (calories, macros in g and % kept in sync and summing to 100, fiber, water, + Add Goal)
-- [ ] BMI Calculator (adult categories + gauge, healthy range, CDC percentiles 2–19, under-2 message, BMR, TDEE, waist-to-height, history chart, About BMI with CDC/WHO/NIH links)
-- [ ] Goal math (TDEE ± pace × 3,500 / 7), macro presets, protein suggestion, offer to update after weight changes
-- [ ] Safety guardrails (1,200/1,500 floors, ≤2 lb or 1% per week, low goal BMI warning, under 18 / pregnant / breastfeeding, disclaimer)
-- [ ] Unit tests for all math, checked against official worked examples
-- [ ] Release `v0.4`
+- [x] Weigh-ins (date, time, note), 7-day trend, rate per week, projected goal date, offer to update calories after a weight change
+- [x] Progress (Weight/Calories/Macros, 1W–1Y, goal line, trend line, Average/Change)
+- [x] Nutrition (Calories/Nutrients/Macros, week chart with goal line, full nutrient details vs goals/Daily Values)
+- [x] Goals (calories, macros in g and % kept in sync and summing to 100, fiber, water, + Add Goal)
+- [x] BMI Calculator (adult categories + gauge, healthy range, CDC percentiles 2–19, under-2 message, BMR, TDEE, waist-to-height, history chart, About BMI with CDC/WHO/NIH links)
+- [x] Goal math (TDEE ± pace × 3,500 / 7), macro presets, protein suggestion
+- [x] Safety guardrails (1,200/1,500 floors, ≤2 lb or 1% per week, low goal BMI warning, under 18 / pregnant / breastfeeding, disclaimer)
+- [x] Unit tests for all math (Mifflin worked examples, CDC LMS/extended method, adult CDC example, Atwater shares, rounding to 100)
 
 ### Stage 5: Settings, polish, and the final IPA
-- [ ] Settings (Profile, Nutrition Goals, Notifications, Units, Appearance, Food Database key, Backup & Restore, Help, About)
-- [ ] Local notifications (meal, weigh-in, water), all off by default
-- [ ] Backup & Restore (JSON export/import via Share sheet / Files)
-- [ ] Erase All Data (double confirm)
-- [ ] About: version, Data Sources & Licenses, disclaimer
-- [ ] Water tracker, exercise entries (add-back setting off by default), streak
-- [ ] Accessibility pass (Dynamic Type, VoiceOver, contrast), empty states, offline messages, speed check
-- [ ] Full code review and all tests green
-- [ ] Tag `v1.0`, update `SIDELOAD-GUIDE.md`, final on-phone checklist
+- [x] Settings (Account, Nutrition Goals, Notifications, Units, Appearance, Food Database key, AI Photo key, Backup & Restore, Help, About). "Log Out" from the design is replaced by Erase All Data: there are no accounts.
+- [x] Local notifications (meals, weigh-in, water every 2 hours), all off by default
+- [x] Backup & Restore (JSON export via Share sheet, import via Files; never includes API keys)
+- [x] Erase All Data (double confirm, optional key removal)
+- [x] About: version, Data Sources & Licenses, disclaimer
+- [x] Water tracker screen, exercise entries (add-back setting off by default), streak
+- [x] Accessibility: labels on icons/charts, combined row elements, Dynamic Type-friendly layouts, light/dark colors
+- [x] Unit + UI tests (UI tests walk every screen and save screenshots)
+- [ ] Tag `v1.0`, final on-phone checklist

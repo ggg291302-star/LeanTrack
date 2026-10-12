@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.0 — Stages 3–5: the full app
+**Food logging**
+- First-launch setup: profile, goal, pace, activity, units, and a starting calorie plan with the math shown
+- Home: calorie ring, macro cards (grams, % of calories, goal), remaining (with optional exercise add-back), today's meals, water, streak; "Today ▾" opens a calendar
+- Diary: week strip, meal sections, tap to edit, swipe to delete, long-press to move/copy, copy from yesterday, save a meal, exercise section
+- Add Food: typo-tolerant search over 13,364 USDA foods, Recent, Favorites, Common, Recipes, My Foods, Brands (online), quick "+" add, choose the meal
+- Food / Meal Detail: real USDA portions, macro donut, every nutrient with % Daily Value ("—" when unknown), source and FDC ID, favorites
+- Barcode scanner (VisionKit, AVFoundation fallback): Open Food Facts → USDA Branded → create a custom food with the barcode filled in
+- Food photos: on-device recognition (Apple Vision); optional AI estimate with Claude using your own Anthropic key, which splits the plate into foods and estimates grams (calories always from USDA)
+- Recipes: 125 with photos, filters (meal, under 500 cal, 25 g+ protein, 30 min, vegetarian, favorites), servings scaler, credits, log servings; your own recipes, custom foods and saved meals
+**Weight, goals, BMI and charts**
+- Weigh-ins with notes, 7-day trend, rate per week, projected goal date; offers to update the calorie goal when your weight changes
+- Progress: weight, calories and macros charts for 1W–1Y with goal lines, average and change
+- Nutrition: week chart with goal line, every nutrient vs goals for a day, macro split vs targets
+- Goals: calorie goal (suggested with guardrails, or your own), macro presets or custom (grams and % stay in sync and always add up to 100), fiber, water, extra nutrient goals
+- BMI calculator: CDC adult categories with gauge and healthy range, CDC percentiles for ages 2–19 (2022 extended method), under-2 message, BMR/TDEE, waist-to-height ratio, BMI history, links to CDC/WHO/NIH
+- Safety guardrails: 1,200/1,500-calorie floors, max 2 lb or 1% a week, no loss plans under 18 or when pregnant/breastfeeding, low goal-BMI warning, disclaimer
+**Settings and polish**
+- Account, Nutrition Goals, Notifications (meal, weigh-in and water reminders, all off by default), Units, Appearance (System/Dark/Light), Food Database (your own USDA key in the Keychain, Open Food Facts on/off), AI Photo Estimates (your own Anthropic key in the Keychain), Backup & Restore (JSON file via Share/Files), Help, About (data sources & licenses, disclaimer), Erase All Data (double confirm)
+- Unit tests for energy, BMI/CDC, nutrition, parsing (USDA, Open Food Facts, Claude), backups and weigh-ins; UI tests walk every screen and save screenshots
+
 ## Stage 2: Real data (no new IPA; the data is used in Stage 3)
 - Built-in USDA food database: 13,364 foods (Foundation, SR Legacy, FNDDS), 31,527 real portion sizes, 5.0 MB, offline
 - Common list: 172 everyday foods with default portions

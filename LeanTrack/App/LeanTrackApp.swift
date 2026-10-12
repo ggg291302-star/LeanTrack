@@ -33,6 +33,8 @@ struct LeanTrackApp: App {
             #endif
             return container
         }
+        // The store lives in Application Support, which doesn't exist yet on a fresh install.
+        try? FileManager.default.createDirectory(at: URL.applicationSupportDirectory, withIntermediateDirectories: true)
         do {
             return try ModelContainer(for: schema, configurations: ModelConfiguration("LeanTrack"))
         } catch {
