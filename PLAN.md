@@ -70,7 +70,8 @@ This file is the working checklist. Tick items as they're done so a future sessi
 - [x] CDC BMI-for-age 2022 data file (L, M, S, sigma, P95) bundled and cited, with the loader `CDCGrowthData.swift`. The percentile math is Stage 4.
 - [x] `DATA_SOURCES.md`
 - [x] Data tests: 10 foods vs the USDA API fixture, every recipe has a source and license, no recipe missing nutrition, nutrition re-adds from ingredients, Common list resolves, search finds typos and is fast, CDC worked-example rows
-- [ ] Report to owner: counts, file sizes, 10 sample foods, 5 sample recipes with sources
+- [x] Report to owner: counts, file sizes, 10 sample foods, 5 sample recipes with sources
+- [x] 118/125 recipes have a reviewed Commons photo (7.6 MB). App data total ≈ 13 MB.
 
 **How to rebuild the data** (on Windows, from the `LeanTrack` folder):
 `node scripts/build-food-db.mjs` → `node scripts/verify-foods.mjs` → `node scripts/fetch-cdc-bmi.mjs` → `node scripts/recipes/fetch-nhlbi.mjs` → `node scripts/recipes/fetch-wikibooks.mjs` → `node scripts/recipes/build-recipes.mjs` → `node scripts/recipes/fetch-photos.mjs` → `node scripts/recipes/build-recipes.mjs` (again, to attach photo credits)

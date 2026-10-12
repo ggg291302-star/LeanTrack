@@ -5,6 +5,7 @@
 // Output: LeanTrack/Resources/RecipePhotos/<recipe id>.jpg and scripts/data/recipes/photos.json
 // Usage:  node scripts/recipes/fetch-photos.mjs           (search + download)
 //         node scripts/recipes/fetch-photos.mjs --list    (also print the candidates for review)
+// Choices (recipe-curation.mjs PHOTO_CHOICES): "words", n (Nth result), { q: "words", n }, "File:Name.jpg", or null.
 import { existsSync, mkdirSync, readFileSync, writeFileSync, createWriteStream, statSync, readdirSync, rmSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { join } from "node:path";
@@ -93,9 +94,9 @@ for (const r of recipes) {
     pick = await byFile(choice.slice(5));
     if (!pick?.ok) throw new Error(`Chosen file for ${r.id} is not usable: ${JSON.stringify(pick)}`);
   } else {
-    const query = typeof choice === "string" ? choice : defaultQuery(r.title);
+    const query = typeof choice === "string" ? choice : choice?.q ?? defaultQuery(r.title);
     list = await candidates(query);
-    const index = typeof choice === "number" ? choice : 0;
+    const index = typeof choice === "number" ? choice : choice?.n ?? 0;
     pick = list.filter((c) => c.ok)[index];
     if (LIST) review.push(`## ${r.id} "${r.title}" q="${query}"\n` + list.map((c, i) => `   ${c.ok ? "ok" : "--"} ${c.file} [${c.license}] ${c.width}x${c.height}`).join("\n"));
   }

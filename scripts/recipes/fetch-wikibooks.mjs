@@ -77,8 +77,8 @@ function parse(page) {
   return {
     id: "wikibooks-" + page.pageid,
     title: page.title.replace(/^Cookbook:/, ""),
-    url: "https://en.wikibooks.org/wiki/" + encodeURIComponent(page.title.replace(/ /g, "_")),
-    historyUrl: `https://en.wikibooks.org/w/index.php?title=${encodeURIComponent(page.title.replace(/ /g, "_"))}&action=history`,
+    url: "https://en.wikibooks.org/wiki/" + encodeURI(page.title.replace(/ /g, "_")),
+    historyUrl: `https://en.wikibooks.org/w/index.php?title=${encodeURI(page.title.replace(/ /g, "_"))}&action=history`,
     revision: page.revisions?.[0]?.revid,
     revisionDate: page.revisions?.[0]?.timestamp,
     summaryCategory: summaryField(text, "Category"),

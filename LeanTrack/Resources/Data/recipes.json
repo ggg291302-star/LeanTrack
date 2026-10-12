@@ -137,6 +137,14 @@
     "protein": 30,
     "carbs": 30,
     "potassium": 944
+   },
+   "photo": {
+    "image": "nhlbi-20-minute-chicken-creole.jpg",
+    "file": "Sancocho de gallina criolla.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Sancocho_de_gallina_criolla.jpg",
+    "artist": "WIKIRAICES",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -237,6 +245,14 @@
     "sat_fat": 1,
     "cholesterol": 37,
     "sodium": 47
+   },
+   "photo": {
+    "image": "nhlbi-alaska-salmon-salad.jpg",
+    "file": "Salmon, French fries, and salad - Akaroa, New Zealand.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Salmon,_French_fries,_and_salad_-_Akaroa,_New_Zealand.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -244,10 +260,10 @@
    "title": "American Potato Salad I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AAmerican_Potato_Salad_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:American_Potato_Salad_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"American Potato Salad I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AAmerican_Potato_Salad_I&action=history), revision 4630231, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"American Potato Salad I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:American_Potato_Salad_I&action=history), revision 4630231, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -362,7 +378,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-137949.jpg",
+    "file": "American Old-fashioned Potato salad (Clovis CA. 2022).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:American_Old-fashioned_Potato_salad_(Clovis_CA._2022).jpg",
+    "artist": "NeoBatfreak",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-apple-coffee-cake",
@@ -485,6 +509,14 @@
     "sat_fat": 1,
     "cholesterol": 11,
     "sodium": 68
+   },
+   "photo": {
+    "image": "nhlbi-apple-coffee-cake.jpg",
+    "file": "Apple coffee cake.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Apple_coffee_cake.jpg",
+    "artist": "ChelseaWa",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
    }
   },
   {
@@ -592,6 +624,14 @@
     "protein": 19,
     "carbs": 4,
     "potassium": 487
+   },
+   "photo": {
+    "image": "nhlbi-asian-style-steamed-salmon.jpg",
+    "file": "Steamed salmon head.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Steamed_salmon_head.jpg",
+    "artist": "Alpha",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
    }
   },
   {
@@ -599,10 +639,10 @@
    "title": "Asparagus Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AAsparagus_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Asparagus_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Asparagus Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AAsparagus_Soup&action=history), revision 4523683, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Asparagus Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Asparagus_Soup&action=history), revision 4523683, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -687,7 +727,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-34623.jpg",
+    "file": "Asparagus soup (spargelsuppe).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg",
+    "artist": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-asparagus-lemon-sauce",
@@ -792,6 +840,14 @@
     "protein": 2,
     "carbs": 7,
     "potassium": 241
+   },
+   "photo": {
+    "image": "nhlbi-asparagus-lemon-sauce.jpg",
+    "file": "Asparagus with lemon egg sauce (3056940872).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Asparagus_with_lemon_egg_sauce_(3056940872).jpg",
+    "artist": "Karen and Brad Emerson",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -901,6 +957,14 @@
     "protein": 3,
     "carbs": 19,
     "potassium": 230
+   },
+   "photo": {
+    "image": "nhlbi-autumn-salad.jpg",
+    "file": "Autumn salad.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Autumn_salad.jpg",
+    "artist": "Ірина Бучнєва",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -1002,6 +1066,14 @@
     "protein": 3,
     "carbs": 13,
     "potassium": 510
+   },
+   "photo": {
+    "image": "nhlbi-baby-spinach-golden-raisins-and.jpg",
+    "file": "Sauteed spinach and tomatoes (41368303650).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Sauteed_spinach_and_tomatoes_(41368303650).jpg",
+    "artist": "Joey Doll",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -1134,6 +1206,14 @@
     "protein": 30,
     "carbs": 10,
     "potassium": 453
+   },
+   "photo": {
+    "image": "nhlbi-baked-fish.jpg",
+    "file": "Brachsenfilet Katoffelsalat Sonne Bischberg.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Brachsenfilet_Katoffelsalat_Sonne_Bischberg.jpg",
+    "artist": "Benreis",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -1259,10 +1339,10 @@
    "title": "Baked Lemon Thyme Halibut",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABaked_Lemon_Thyme_Halibut",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Baked_Lemon_Thyme_Halibut",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Baked Lemon Thyme Halibut\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABaked_Lemon_Thyme_Halibut&action=history), revision 4511873, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Baked Lemon Thyme Halibut\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Baked_Lemon_Thyme_Halibut&action=history), revision 4511873, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -1343,7 +1423,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-252225.jpg",
+    "file": "Halibut and salmon fillets.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Halibut_and_salmon_fillets.jpg",
+    "artist": "gran",
+    "license": "CC BY 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/3.0"
+   }
   },
   {
    "id": "nhlbi-baked-salmon-dijon",
@@ -1464,6 +1552,14 @@
     "protein": 27,
     "carbs": 5,
     "potassium": 703
+   },
+   "photo": {
+    "image": "nhlbi-baked-salmon-dijon.jpg",
+    "file": "Liat Portal for Foodie Disorder - Oven-baked teriyaki salmon with vegetables.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Oven-baked_teriyaki_salmon_with_vegetables.jpg",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -1595,6 +1691,14 @@
     "protein": 22,
     "carbs": 9,
     "potassium": 635
+   },
+   "photo": {
+    "image": "nhlbi-baked-tilapia-tomatoes.jpg",
+    "file": "Liat Portal for Foodie Disorder - Tilapia with potatoes, garlic, and hot peppers.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Tilapia_with_potatoes,_garlic,_and_hot_peppers.jpg",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -1602,10 +1706,10 @@
    "title": "Banana Bread with Walnuts",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Bread_with_Walnuts",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Banana_Bread_with_Walnuts",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Banana Bread with Walnuts\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABanana_Bread_with_Walnuts&action=history), revision 4541035, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Banana Bread with Walnuts\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Banana_Bread_with_Walnuts&action=history), revision 4541035, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 24,
    "servingSize": "1 slice (1/12 of a loaf)",
    "prepMinutes": null,
@@ -1705,17 +1809,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-444845.jpg",
+    "file": "Julia's Banana and Blueberry Cake with walnuts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Julia%27s_Banana_and_Blueberry_Cake_with_walnuts.jpg",
+    "artist": "Alpha",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-471689",
    "title": "Banana Pancakes",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABanana_Pancakes",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Banana_Pancakes",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Banana Pancakes\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABanana_Pancakes&action=history), revision 4523328, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Banana Pancakes\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Banana_Pancakes&action=history), revision 4523328, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -1814,17 +1926,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-471689.jpg",
+    "file": "Liat Portal for Foodie Disorder - Banana and Strawberry Pancakes.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Banana_and_Strawberry_Pancakes.jpg",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-13260",
    "title": "Basic Scrambled Eggs",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABasic_Scrambled_Eggs",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Basic_Scrambled_Eggs",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Basic Scrambled Eggs\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABasic_Scrambled_Eggs&action=history), revision 4523414, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Basic Scrambled Eggs\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Basic_Scrambled_Eggs&action=history), revision 4523414, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -1904,17 +2024,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-13260.jpg",
+    "file": "Scrambled eggs with basil.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_basil.jpg",
+    "artist": "OmegaFallon",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "wikibooks-103462",
    "title": "Bean Chili",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABean_Chili",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Bean_Chili",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Bean Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABean_Chili&action=history), revision 4518540, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Bean Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Bean_Chili&action=history), revision 4518540, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -2029,17 +2157,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-103462.jpg",
+    "file": "Two-Bean Vegetarian Chili.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Two-Bean_Vegetarian_Chili.jpg",
+    "artist": "Thriving Vegetarian",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-103038",
    "title": "Black Bean Chili",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Chili",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Black_Bean_Chili",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Black Bean Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABlack_Bean_Chili&action=history), revision 4523913, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Black Bean Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Black_Bean_Chili&action=history), revision 4523913, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -2172,17 +2308,25 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-103038.jpg",
+    "file": "Black bean chili (3263369585).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Black_bean_chili_(3263369585).jpg",
+    "artist": "Karen and Brad Emerson",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-127883",
    "title": "Black Bean Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABlack_Bean_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Black_Bean_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Black Bean Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABlack_Bean_Soup&action=history), revision 4524842, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Black Bean Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Black_Bean_Soup&action=history), revision 4524842, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -2304,7 +2448,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-127883.jpg",
+    "file": "Black Bean Soup (140491813).jpeg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Black_Bean_Soup_(140491813).jpeg",
+    "artist": "J Doll",
+    "license": "CC BY 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/3.0"
+   }
   },
   {
    "id": "nhlbi-braised-cod-leeks",
@@ -2424,6 +2576,14 @@
     "protein": 17,
     "carbs": 13,
     "potassium": 476
+   },
+   "photo": {
+    "image": "nhlbi-braised-cod-leeks.jpg",
+    "file": "Dorschfilet Hafenliebe Warnemünde.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Dorschfilet_Hafenliebe_Warnem%C3%BCnde.jpg",
+    "artist": "Benreis",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -2431,10 +2591,10 @@
    "title": "Bran Muffins",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABran_Muffins",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Bran_Muffins",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Bran Muffins\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABran_Muffins&action=history), revision 4515901, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Bran Muffins\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Bran_Muffins&action=history), revision 4515901, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -2535,17 +2695,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-62467.jpg",
+    "file": "Applesauce oat bran muffins (42274838985).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Applesauce_oat_bran_muffins_(42274838985).jpg",
+    "artist": "Joey Doll",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-3992",
    "title": "Brown Rice with Ground Turkey",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABrown_Rice_with_Ground_Turkey",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Brown_Rice_with_Ground_Turkey",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Brown Rice with Ground Turkey\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABrown_Rice_with_Ground_Turkey&action=history), revision 4512901, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Brown Rice with Ground Turkey\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Brown_Rice_with_Ground_Turkey&action=history), revision 4512901, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -2635,10 +2803,10 @@
    "title": "Bulgogi",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ABulgogi",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Bulgogi",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Bulgogi\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ABulgogi&action=history), revision 4610539, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Bulgogi\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Bulgogi&action=history), revision 4610539, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -2737,7 +2905,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-13447.jpg",
+    "file": "Bulgogi 3.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bulgogi_3.jpg",
+    "artist": "Debbie Tingzon",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nhlbi-caribbean-pink-beans",
@@ -2851,6 +3027,14 @@
     "protein": 6,
     "carbs": 28,
     "potassium": 495
+   },
+   "photo": {
+    "image": "nhlbi-caribbean-pink-beans.jpg",
+    "file": "Stewed beans, fried plantains and garri.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Stewed_beans,_fried_plantains_and_garri.jpg",
+    "artist": "Joan Onanyo",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -2858,10 +3042,10 @@
    "title": "Carrot and Raisin Salad",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ACarrot_and_Raisin_Salad",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Carrot_and_Raisin_Salad",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Carrot and Raisin Salad\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ACarrot_and_Raisin_Salad&action=history), revision 4523446, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Carrot and Raisin Salad\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Carrot_and_Raisin_Salad&action=history), revision 4523446, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -2939,17 +3123,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-10049.jpg",
+    "file": "Nest of Carrot Salad, by LadyofProcrastination.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Nest_of_Carrot_Salad,_by_LadyofProcrastination.jpg",
+    "artist": "Melinda",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-214394",
    "title": "Chicken and Black-eyed Pea Stew",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_and_Black-eyed_Pea_Stew",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Chicken_and_Black-eyed_Pea_Stew",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Chicken and Black-eyed Pea Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AChicken_and_Black-eyed_Pea_Stew&action=history), revision 4518586, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Chicken and Black-eyed Pea Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Chicken_and_Black-eyed_Pea_Stew&action=history), revision 4518586, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -3081,7 +3273,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-214394.jpg",
+    "file": "BlackEyedPeas.JPG",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:BlackEyedPeas.JPG",
+    "artist": "Toby Hudson",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "nhlbi-chicken-and-mushroom-fricassee",
@@ -3229,6 +3429,14 @@
     "protein": 20,
     "carbs": 24,
     "potassium": 807
+   },
+   "photo": {
+    "image": "nhlbi-chicken-and-mushroom-fricassee.jpg",
+    "file": "Chicken fricassee-01-3.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_fricassee-01-3.jpg",
+    "artist": "Chicken_fricassee-01.jpg: Like_the_Grand_Canyon derivative work: Hic et nunc",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -3338,6 +3546,14 @@
     "fiber": 1,
     "protein": 30,
     "carbs": 5
+   },
+   "photo": {
+    "image": "nhlbi-chicken-chile-stew.jpg",
+    "file": "Bowl of chili.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg",
+    "artist": "Carstor",
+    "license": "CC BY-SA 2.5",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5"
    }
   },
   {
@@ -3493,6 +3709,14 @@
     "protein": 18,
     "carbs": 13,
     "potassium": 380
+   },
+   "photo": {
+    "image": "nhlbi-chicken-picadillo.jpg",
+    "file": "Picadillo and rice.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Picadillo_and_rice.jpg",
+    "artist": "Cary Bass",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
    }
   },
   {
@@ -3599,6 +3823,14 @@
     "protein": 27,
     "carbs": 2,
     "potassium": 236
+   },
+   "photo": {
+    "image": "nhlbi-chicken-salad.jpg",
+    "file": "Chicken salad with eggs.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_salad_with_eggs.jpg",
+    "artist": "T. Bjornstad",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -3606,10 +3838,10 @@
    "title": "Chicken Tikka Masala",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AChicken_Tikka_Masala",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Chicken_Tikka_Masala",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Chicken Tikka Masala\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AChicken_Tikka_Masala&action=history), revision 4614347, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Chicken Tikka Masala\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Chicken_Tikka_Masala&action=history), revision 4614347, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -3727,17 +3959,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-42657.jpg",
+    "file": "Chicken Tikka Masala KellySue.JPG",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_KellySue.JPG",
+    "artist": "Kelly Sue",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-188298",
    "title": "Chickpea Stew",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AChickpea_Stew",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Chickpea_Stew",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Chickpea Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AChickpea_Stew&action=history), revision 4518592, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Chickpea Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Chickpea_Stew&action=history), revision 4518592, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -3873,17 +4113,25 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-188298.jpg",
+    "file": "Nohut yahni.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Nohut_yahni.jpg",
+    "artist": "E4024",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-106987",
    "title": "Chunky Guacamole",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AChunky_Guacamole",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Chunky_Guacamole",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Chunky Guacamole\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AChunky_Guacamole&action=history), revision 4523970, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Chunky Guacamole\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Chunky_Guacamole&action=history), revision 4523970, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -3951,17 +4199,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-106987.jpg",
+    "file": "Guacamole IMGP1271.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Guacamole_IMGP1271.jpg",
+    "artist": "Nikodem Nijaki",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "wikibooks-252231",
    "title": "Coconut Crusted Baked Cod",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ACoconut_Crusted_Baked_Cod",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Coconut_Crusted_Baked_Cod",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Coconut Crusted Baked Cod\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ACoconut_Crusted_Baked_Cod&action=history), revision 4531775, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Coconut Crusted Baked Cod\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Coconut_Crusted_Baked_Cod&action=history), revision 4531775, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -4060,7 +4316,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-252231.jpg",
+    "file": "Baked cod fillet.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Baked_cod_fillet.jpg",
+    "artist": "Tiia Monto",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-cold-fusilli-pasta-summer",
@@ -4196,6 +4460,14 @@
     "protein": 21,
     "carbs": 63,
     "potassium": 576
+   },
+   "photo": {
+    "image": "nhlbi-cold-fusilli-pasta-summer.jpg",
+    "file": "Pasta salad closeup.JPG",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pasta_salad_closeup.JPG",
+    "artist": "Brynn",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
    }
   },
   {
@@ -4203,10 +4475,10 @@
    "title": "Coleslaw I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AColeslaw_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Coleslaw_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Coleslaw I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AColeslaw_I&action=history), revision 4630331, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Coleslaw I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Coleslaw_I&action=history), revision 4630331, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -4279,7 +4551,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-72799.jpg",
+    "file": "Bowl'o'Coleslaw modified.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bowl%27o%27Coleslaw_modified.jpg",
+    "artist": "Unknown",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "nhlbi-couscous-carrots-walnuts-and",
@@ -4399,6 +4679,14 @@
     "protein": 6,
     "carbs": 39,
     "potassium": 168
+   },
+   "photo": {
+    "image": "nhlbi-couscous-carrots-walnuts-and.jpg",
+    "file": "Spicy orange glazed tofu w Israeli couscous and ginger glazed carrots (4260850655).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Spicy_orange_glazed_tofu_w_Israeli_couscous_and_ginger_glazed_carrots_(4260850655).jpg",
+    "artist": "Karen and Brad Emerson",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -4514,6 +4802,14 @@
     "protein": 18,
     "carbs": 62,
     "potassium": 1142
+   },
+   "photo": {
+    "image": "nhlbi-creamy-squash-soup-shredded-apples.jpg",
+    "file": "Butternut squash soup - El Dorado Kitchen - Nov 2018 - Sarah Stierch 01.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Butternut_squash_soup_-_El_Dorado_Kitchen_-_Nov_2018_-_Sarah_Stierch_01.jpg",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
    }
   },
   {
@@ -4521,10 +4817,10 @@
    "title": "Denver Omelet",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ADenver_Omelet",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Denver_Omelet",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Denver Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ADenver_Omelet&action=history), revision 4517799, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Denver Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Denver_Omelet&action=history), revision 4517799, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -4628,17 +4924,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-28320.jpg",
+    "file": "FoodOmelete.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:FoodOmelete.jpg",
+    "artist": "Renee Comet (photographer)",
+    "license": "Public domain",
+    "licenseURL": null
+   }
   },
   {
    "id": "wikibooks-3484",
    "title": "Eggplant and Chickpea Skillet",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AEggplant_and_Chickpea_Skillet",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Eggplant_and_Chickpea_Skillet",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Eggplant and Chickpea Skillet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AEggplant_and_Chickpea_Skillet&action=history), revision 4610541, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Eggplant and Chickpea Skillet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Eggplant_and_Chickpea_Skillet&action=history), revision 4610541, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -4859,6 +5163,14 @@
     "protein": 2,
     "carbs": 9,
     "potassium": 179
+   },
+   "photo": {
+    "image": "nhlbi-flavorful-green-beans.jpg",
+    "file": "Liat Portal for Foodie Disorder - Sautéed Green Beans with Onions.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Saut%C3%A9ed_Green_Beans_with_Onions.jpg",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -5047,6 +5359,14 @@
     "protein": 10,
     "carbs": 21,
     "potassium": 170
+   },
+   "photo": {
+    "image": "nhlbi-fresh-lumpia-lumpiang-sariwa.jpg",
+    "file": "Fresh Lumpia 01.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Fresh_Lumpia_01.jpg",
+    "artist": "Marife.altabano",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -5178,6 +5498,14 @@
     "sat_fat": 1,
     "cholesterol": 2,
     "sodium": 118
+   },
+   "photo": {
+    "image": "nhlbi-garden-potato-salad.jpg",
+    "file": "Potato salad 3.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Potato_salad_3.jpg",
+    "artist": "jules",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -5401,6 +5729,14 @@
     "protein": 31,
     "carbs": 15,
     "potassium": 874
+   },
+   "photo": {
+    "image": "nhlbi-grilled-tuna-chickpea-and-spinach.jpg",
+    "file": "Pear salad with seared tuna - San Francisco, CA.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pear_salad_with_seared_tuna_-_San_Francisco,_CA.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -5408,10 +5744,10 @@
    "title": "Grilled Vegetable Sandwich",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AGrilled_Vegetable_Sandwich",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Grilled_Vegetable_Sandwich",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Grilled Vegetable Sandwich\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AGrilled_Vegetable_Sandwich&action=history), revision 4518254, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Grilled Vegetable Sandwich\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Grilled_Vegetable_Sandwich&action=history), revision 4518254, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -5485,17 +5821,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-4207.jpg",
+    "file": "Vegetable Sandwich 2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Vegetable_Sandwich_2.jpg",
+    "artist": "Ganesh Mohan T",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-29043",
    "title": "Hash Browns",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AHash_Browns",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Hash_Browns",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Hash Browns\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AHash_Browns&action=history), revision 4501537, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Hash Browns\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Hash_Browns&action=history), revision 4501537, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -5571,7 +5915,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-29043.jpg",
+    "file": "Hash Browns.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Hash_Browns.jpg",
+    "artist": "Sumit Surai",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-hawaiian-huli-huli-chicken",
@@ -5691,6 +6043,14 @@
     "protein": 18,
     "carbs": 16,
     "potassium": 255
+   },
+   "photo": {
+    "image": "nhlbi-hawaiian-huli-huli-chicken.jpg",
+    "file": "Huli huli (8084262832).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Huli_huli_(8084262832).jpg",
+    "artist": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -5815,6 +6175,14 @@
     "protein": 31,
     "carbs": 66,
     "potassium": 569
+   },
+   "photo": {
+    "image": "nhlbi-heavenly-chicken-angel-hair-pasta.jpg",
+    "file": "Chicken with pasta and mushroom ragout and Broccoli.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_with_pasta_and_mushroom_ragout_and_Broccoli.jpg",
+    "artist": "FitTasteTic",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
    }
   },
   {
@@ -5949,6 +6317,14 @@
     "sat_fat": 1,
     "cholesterol": 93,
     "sodium": 217
+   },
+   "photo": {
+    "image": "nhlbi-homemade-turkey-soup.jpg",
+    "file": "Turkey noodle soup with carrots - Massachusetts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Turkey_noodle_soup_with_carrots_-_Massachusetts.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -5956,10 +6332,10 @@
    "title": "Honey-Peppered Salmon",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AHoney-Peppered_Salmon",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Honey-Peppered_Salmon",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Honey-Peppered Salmon\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AHoney-Peppered_Salmon&action=history), revision 4613398, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Honey-Peppered Salmon\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Honey-Peppered_Salmon&action=history), revision 4613398, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -6058,17 +6434,25 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-112277.jpg",
+    "file": "Mesa Grill Ancho Chile Honey Glazed Salmon.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Mesa_Grill_Ancho_Chile_Honey_Glazed_Salmon.jpg",
+    "artist": "Calgary Reviews from Calgary, Canada",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-100369",
    "title": "Indian Butter Chicken I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AIndian_Butter_Chicken_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Indian_Butter_Chicken_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Indian Butter Chicken I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AIndian_Butter_Chicken_I&action=history), revision 4510142, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Indian Butter Chicken I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Indian_Butter_Chicken_I&action=history), revision 4510142, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -6192,17 +6576,25 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-100369.jpg",
+    "file": "Chicken makhani.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_makhani.jpg",
+    "artist": "stu_spivack",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-483723",
    "title": "Kachumbari",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AKachumbari",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Kachumbari",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Kachumbari\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AKachumbari&action=history), revision 4640040, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Kachumbari\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Kachumbari&action=history), revision 4640040, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -6292,17 +6684,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-483723.jpg",
+    "file": "Kachumbari.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Kachumbari.jpg",
+    "artist": "Charles Haynes",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-479669",
    "title": "Langar Dal",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ALangar_Dal",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Langar_Dal",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Langar Dal\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ALangar_Dal&action=history), revision 4597437, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Langar Dal\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Langar_Dal&action=history), revision 4597437, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -6392,17 +6792,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-479669.jpg",
+    "file": "Traditional Indian meal.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Traditional_Indian_meal.jpg",
+    "artist": "ᱤᱧ ᱢᱟᱛᱟᱞ",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-110617",
    "title": "Lemon Rosemary Pork Tenderloin",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ALemon_Rosemary_Pork_Tenderloin",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Lemon_Rosemary_Pork_Tenderloin",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Lemon Rosemary Pork Tenderloin\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ALemon_Rosemary_Pork_Tenderloin&action=history), revision 4510170, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Lemon Rosemary Pork Tenderloin\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Lemon_Rosemary_Pork_Tenderloin&action=history), revision 4510170, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 8,
    "servingSize": null,
    "prepMinutes": null,
@@ -6507,7 +6915,15 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-110617.jpg",
+    "file": "Pork tenderloin dish.png",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pork_tenderloin_dish.png",
+    "artist": "User:Ɱ",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-lentil-soup",
@@ -6643,6 +7059,14 @@
     "protein": 9,
     "carbs": 24,
     "potassium": 503
+   },
+   "photo": {
+    "image": "nhlbi-lentil-soup.jpg",
+    "file": "Homemade Lentil Soup - Lavash 2025-02-10.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Homemade_Lentil_Soup_-_Lavash_2025-02-10.jpg",
+    "artist": "Andy Li",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -6735,6 +7159,14 @@
     "protein": 5,
     "carbs": 20,
     "potassium": 361
+   },
+   "photo": {
+    "image": "nhlbi-mango-shake.jpg",
+    "file": "Mango milkshake.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Mango_milkshake.jpg",
+    "artist": "Swathi sri srinivasa raghavan",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -6860,6 +7292,14 @@
     "protein": 26,
     "carbs": 10,
     "potassium": 370
+   },
+   "photo": {
+    "image": "nhlbi-marinated-chicken-adobong-manok.jpg",
+    "file": "Chicken adobo.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chicken_adobo.jpg",
+    "artist": "dbgg1979 on flickr",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -6867,10 +7307,10 @@
    "title": "Meatloaf I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AMeatloaf_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Meatloaf_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Meatloaf I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AMeatloaf_I&action=history), revision 4530181, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Meatloaf I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Meatloaf_I&action=history), revision 4530181, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -6977,17 +7417,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-41190.jpg",
+    "file": "Meatloaf (1).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Meatloaf_(1).jpg",
+    "artist": "Renee Comet (Photographer)",
+    "license": "Public domain",
+    "licenseURL": null
+   }
   },
   {
    "id": "wikibooks-156931",
    "title": "Mediterranean Beef Stew",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AMediterranean_Beef_Stew",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Mediterranean_Beef_Stew",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Mediterranean Beef Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AMediterranean_Beef_Stew&action=history), revision 4524813, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Mediterranean Beef Stew\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Mediterranean_Beef_Stew&action=history), revision 4524813, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -7069,7 +7517,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-156931.jpg",
+    "file": "Beef stew 2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Beef_stew_2.jpg",
+    "artist": "3steph14",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-minestrone-soup",
@@ -7215,6 +7671,14 @@
     "sat_fat": 0,
     "cholesterol": 0,
     "sodium": 191
+   },
+   "photo": {
+    "image": "nhlbi-minestrone-soup.jpg",
+    "file": "Minestrone soup.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Minestrone_soup.jpg",
+    "artist": "Katrin Morenz from Aachen, Deutschland",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
    }
   },
   {
@@ -7346,6 +7810,14 @@
     "protein": 9,
     "carbs": 26,
     "potassium": 70
+   },
+   "photo": {
+    "image": "nhlbi-mushroom-penne.jpg",
+    "file": "Broccoli, mushrooms, chicken sausage, and tomato sauce on penne - Massachusetts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Broccoli,_mushrooms,_chicken_sausage,_and_tomato_sauce_on_penne_-_Massachusetts.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
    }
   },
   {
@@ -7353,10 +7825,10 @@
    "title": "Mushroom Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AMushroom_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Mushroom_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Mushroom Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AMushroom_Soup&action=history), revision 4610476, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Mushroom Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Mushroom_Soup&action=history), revision 4610476, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -7459,7 +7931,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-109338.jpg",
+    "file": "Mushroom Soup 4.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Mushroom_Soup_4.jpg",
+    "artist": "Gaurav Dhwaj Khadka",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-new-orleans-red-beans",
@@ -7583,6 +8063,14 @@
     "sat_fat": 0,
     "cholesterol": 0,
     "sodium": 285
+   },
+   "photo": {
+    "image": "nhlbi-new-orleans-red-beans.jpg",
+    "file": "Red Beans and Rice.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Red_Beans_and_Rice.jpg",
+    "artist": "Arnold Gatilao from Fremont, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -7590,10 +8078,10 @@
    "title": "Oat Porridge",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AOat_Porridge",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Oat_Porridge",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Oat Porridge\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AOat_Porridge&action=history), revision 4606890, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Oat Porridge\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Oat_Porridge&action=history), revision 4606890, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -7662,17 +8150,25 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-17844.jpg",
+    "file": "Oat porridge in Ghana.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Oat_porridge_in_Ghana.jpg",
+    "artist": "Edithobayaa1",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-62682",
    "title": "Oatmeal Cookies I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AOatmeal_Cookies_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Oatmeal_Cookies_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Oatmeal Cookies I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AOatmeal_Cookies_I&action=history), revision 4587304, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Oatmeal Cookies I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Oatmeal_Cookies_I&action=history), revision 4587304, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 20,
    "servingSize": null,
    "prepMinutes": null,
@@ -7780,17 +8276,25 @@
     "caffeine": null,
     "alcohol": 0.1
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-62682.jpg",
+    "file": "Oatmeal-Cookie.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Oatmeal-Cookie.jpg",
+    "artist": "Evan-Amos",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "wikibooks-62476",
    "title": "Oatmeal Muffins",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AOatmeal_Muffins",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Oatmeal_Muffins",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Oatmeal Muffins\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AOatmeal_Muffins&action=history), revision 4524799, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Oatmeal Muffins\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Oatmeal_Muffins&action=history), revision 4524799, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -7897,17 +8401,25 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-62476.jpg",
+    "file": "Vegan oatmeal chocolate chip muffins.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Vegan_oatmeal_chocolate_chip_muffins.jpg",
+    "artist": "Caroline Hadilaksono",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-106262",
    "title": "Original Texas-Style Chili",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AOriginal_Texas-Style_Chili",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Original_Texas-Style_Chili",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Original Texas-Style Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AOriginal_Texas-Style_Chili&action=history), revision 4518786, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Original Texas-Style Chili\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Original_Texas-Style_Chili&action=history), revision 4518786, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -8011,7 +8523,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-106262.jpg",
+    "file": "Bowl of chili.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg",
+    "artist": "Carstor",
+    "license": "CC BY-SA 2.5",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5"
+   }
   },
   {
    "id": "nhlbi-oven-fried-yucca",
@@ -8095,6 +8615,14 @@
     "protein": 2,
     "carbs": 20,
     "potassium": 522
+   },
+   "photo": {
+    "image": "nhlbi-oven-fried-yucca.jpg",
+    "file": "Tapioca Chips 2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tapioca_Chips_2.jpg",
+    "artist": "Gaurav Dhwaj Khadka",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -8102,10 +8630,10 @@
    "title": "Pancakes (North American)",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APancakes_(North_American)",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Pancakes_(North_American)",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Pancakes (North American)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APancakes_(North_American)&action=history), revision 4671208, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Pancakes (North American)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Pancakes_(North_American)&action=history), revision 4671208, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 3,
    "servingSize": null,
    "prepMinutes": null,
@@ -8190,17 +8718,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-105063.jpg",
+    "file": "Foodiesfeed.com pouring-honey-on-pancakes-with-walnuts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg",
+    "artist": "Mae Mu",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "wikibooks-112906",
    "title": "Party Mix",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AParty_Mix",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Party_Mix",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Party Mix\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AParty_Mix&action=history), revision 4502850, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Party Mix\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Party_Mix&action=history), revision 4502850, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 24,
    "servingSize": null,
    "prepMinutes": null,
@@ -8318,17 +8854,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-112906.jpg",
+    "file": "Chex Mix Party Mix.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Chex_Mix_Party_Mix.jpg",
+    "artist": "ParentingPatch",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "wikibooks-443382",
    "title": "Pasta with Vegetables",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APasta_with_Vegetables",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Pasta_with_Vegetables",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Pasta with Vegetables\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APasta_with_Vegetables&action=history), revision 4493953, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Pasta with Vegetables\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Pasta_with_Vegetables&action=history), revision 4493953, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -8418,17 +8962,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-443382.jpg",
+    "file": "Pasta primavera.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pasta_primavera.jpg",
+    "artist": "Jeremy Keith",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-210636",
    "title": "Peach and Tomato Gazpacho",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APeach_and_Tomato_Gazpacho",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Peach_and_Tomato_Gazpacho",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Peach and Tomato Gazpacho\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APeach_and_Tomato_Gazpacho&action=history), revision 4525008, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Peach and Tomato Gazpacho\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Peach_and_Tomato_Gazpacho&action=history), revision 4525008, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -8531,17 +9083,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-210636.jpg",
+    "file": "Gazpacho Cazuela Barro.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Gazpacho_Cazuela_Barro.jpg",
+    "artist": "Bocadorada",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-405748",
    "title": "Peanut Butter Banana Oatmeal",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Butter_Banana_Oatmeal",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Butter_Banana_Oatmeal",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Peanut Butter Banana Oatmeal\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APeanut_Butter_Banana_Oatmeal&action=history), revision 4522503, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Peanut Butter Banana Oatmeal\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Peanut_Butter_Banana_Oatmeal&action=history), revision 4522503, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -8619,17 +9179,25 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-405748.jpg",
+    "file": "Banana oatmeal 2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Banana_oatmeal_2.jpg",
+    "artist": "Shisma",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "wikibooks-132729",
    "title": "Peanut Chicken Stir-Fry",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APeanut_Chicken_Stir-Fry",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Peanut_Chicken_Stir-Fry",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Peanut Chicken Stir-Fry\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APeanut_Chicken_Stir-Fry&action=history), revision 4513031, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Peanut Chicken Stir-Fry\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Peanut_Chicken_Stir-Fry&action=history), revision 4513031, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -8733,17 +9301,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-132729.jpg",
+    "file": "Stir-Fried Diced Chicken with Peanut.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Stir-Fried_Diced_Chicken_with_Peanut.jpg",
+    "artist": "Zheng Zhou",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-146786",
    "title": "Pear and Almond Smoothie (Vegan)",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APear_and_Almond_Smoothie_(Vegan)",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Pear_and_Almond_Smoothie_(Vegan)",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Pear and Almond Smoothie (Vegan)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APear_and_Almond_Smoothie_(Vegan)&action=history), revision 4512360, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Pear and Almond Smoothie (Vegan)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Pear_and_Almond_Smoothie_(Vegan)&action=history), revision 4512360, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -8812,7 +9388,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-146786.jpg",
+    "file": "A glass of hyderabad smoothie.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:A_glass_of_hyderabad_smoothie.jpg",
+    "artist": "Queen Asali",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-pinto-beans",
@@ -8935,6 +9519,14 @@
     "fiber": 6,
     "protein": 6,
     "carbs": 20
+   },
+   "photo": {
+    "image": "nhlbi-pinto-beans.jpg",
+    "file": "Pinto Beans Seeds.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pinto_Beans_Seeds.jpg",
+    "artist": "Sanjay Acharya",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -9042,6 +9634,14 @@
     "protein": 20,
     "carbs": 41,
     "potassium": 362
+   },
+   "photo": {
+    "image": "nhlbi-pita-pizzas.jpg",
+    "file": "Pita pizza (1).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Pita_pizza_(1).jpg",
+    "artist": "jeffreyw",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -9049,10 +9649,10 @@
    "title": "Portable Eggs Benedict",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APortable_Eggs_Benedict",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Portable_Eggs_Benedict",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Portable Eggs Benedict\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APortable_Eggs_Benedict&action=history), revision 4514769, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Portable Eggs Benedict\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Portable_Eggs_Benedict&action=history), revision 4514769, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -9130,17 +9730,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-109870.jpg",
+    "file": "Eggs Benedict-01-cropped.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict-01-cropped.jpg",
+    "artist": "Jon Mountjoy",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-18842",
    "title": "Potato Omelet",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APotato_Omelet",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Potato_Omelet",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Potato Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APotato_Omelet&action=history), revision 4522451, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Potato Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Potato_Omelet&action=history), revision 4522451, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -9242,17 +9850,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-18842.jpg",
+    "file": "Tortilla de papas argentina en sartén de teflón.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tortilla_de_papas_argentina_en_sart%C3%A9n_de_tefl%C3%B3n.jpg",
+    "artist": "Horacio Cambeiro",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "wikibooks-6652",
    "title": "Potato-Chickpea Curry",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3APotato-Chickpea_Curry",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Potato-Chickpea_Curry",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Potato-Chickpea Curry\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3APotato-Chickpea_Curry&action=history), revision 4518673, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Potato-Chickpea Curry\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Potato-Chickpea_Curry&action=history), revision 4518673, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -9342,7 +9958,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-6652.jpg",
+    "file": "Coronation chickpeas and potato salad.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Coronation_chickpeas_and_potato_salad.jpg",
+    "artist": "Rooey202",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nhlbi-rainbow-fruit-salad",
@@ -9472,6 +10096,14 @@
     "sat_fat": 0,
     "cholesterol": 0,
     "sodium": 4
+   },
+   "photo": {
+    "image": "nhlbi-rainbow-fruit-salad.jpg",
+    "file": "Sweet Summer Rainbow Fruit Salad.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Sweet_Summer_Rainbow_Fruit_Salad.jpg",
+    "artist": "Pink Sherbet Photography",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -9479,10 +10111,10 @@
    "title": "Ratatouille II",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ARatatouille_II",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Ratatouille_II",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Ratatouille II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ARatatouille_II&action=history), revision 4514080, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Ratatouille II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Ratatouille_II&action=history), revision 4514080, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -9567,7 +10199,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-162377.jpg",
+    "file": "Ratatouille.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Ratatouille.jpg",
+    "artist": "Marcus Guimarães",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nhlbi-red-beans-and-rice",
@@ -9686,6 +10326,14 @@
     "protein": 18,
     "carbs": 57,
     "potassium": 681
+   },
+   "photo": {
+    "image": "nhlbi-red-beans-and-rice.jpg",
+    "file": "Red Beans and Rice.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Red_Beans_and_Rice.jpg",
+    "artist": "Arnold Gatilao from Fremont, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -9693,10 +10341,10 @@
    "title": "Red Lentil Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ARed_Lentil_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Red_Lentil_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Red Lentil Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ARed_Lentil_Soup&action=history), revision 4518501, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Red Lentil Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Red_Lentil_Soup&action=history), revision 4518501, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -9784,17 +10432,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-9014.jpg",
+    "file": "Bowl of lentil soup with green and red lentils.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bowl_of_lentil_soup_with_green_and_red_lentils.jpg",
+    "artist": "Whoisjohngalt",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-110789",
    "title": "Rice with Black Beans (Arroz con Frijoles Negros)",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ARice_with_Black_Beans_(Arroz_con_Frijoles_Negros)",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Rice_with_Black_Beans_(Arroz_con_Frijoles_Negros)",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Rice with Black Beans (Arroz con Frijoles Negros)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ARice_with_Black_Beans_(Arroz_con_Frijoles_Negros)&action=history), revision 4525536, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Rice with Black Beans (Arroz con Frijoles Negros)\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Rice_with_Black_Beans_(Arroz_con_Frijoles_Negros)&action=history), revision 4525536, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 8,
    "servingSize": null,
    "prepMinutes": null,
@@ -9926,7 +10582,15 @@
     "caffeine": 0,
     "alcohol": 0.6
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-110789.jpg",
+    "file": "Fried sticky rice with black beans, peas, and Salchichón sausage, plus soy sauce and black pepper - Massachusetts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Fried_sticky_rice_with_black_beans,_peas,_and_Salchich%C3%B3n_sausage,_plus_soy_sauce_and_black_pepper_-_Massachusetts.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "nhlbi-roasted-beets-orange-sauce",
@@ -10022,6 +10686,14 @@
     "protein": 2,
     "carbs": 12,
     "potassium": 387
+   },
+   "photo": {
+    "image": "nhlbi-roasted-beets-orange-sauce.jpg",
+    "file": "Neon root veggies (roasted beets, turnips, rutabaga, carrots and onions) (6893015819).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Neon_root_veggies_(roasted_beets,_turnips,_rutabaga,_carrots_and_onions)_(6893015819).jpg",
+    "artist": "Gloria Cabada-Leman",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -10029,10 +10701,10 @@
    "title": "Roasted Spiced Chicken Drumsticks",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ARoasted_Spiced_Chicken_Drumsticks",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Roasted_Spiced_Chicken_Drumsticks",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Roasted Spiced Chicken Drumsticks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ARoasted_Spiced_Chicken_Drumsticks&action=history), revision 4505876, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Roasted Spiced Chicken Drumsticks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Roasted_Spiced_Chicken_Drumsticks&action=history), revision 4505876, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -10118,17 +10790,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-457290.jpg",
+    "file": "Tandoori Chicken 01.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tandoori_Chicken_01.jpg",
+    "artist": "andrusdevelopment",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-252227",
    "title": "Rosemary Grilled Salmon Steaks",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ARosemary_Grilled_Salmon_Steaks",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Rosemary_Grilled_Salmon_Steaks",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Rosemary Grilled Salmon Steaks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ARosemary_Grilled_Salmon_Steaks&action=history), revision 4508858, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Rosemary Grilled Salmon Steaks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Rosemary_Grilled_Salmon_Steaks&action=history), revision 4508858, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -10203,17 +10883,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-252227.jpg",
+    "file": "Flame grilled salmon steaks (herb marinade recipe).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Flame_grilled_salmon_steaks_(herb_marinade_recipe).jpg",
+    "artist": "woodleywonderworks",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-413652",
    "title": "Salmon with Rice and Sauce",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASalmon_with_Rice_and_Sauce",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Salmon_with_Rice_and_Sauce",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Salmon with Rice and Sauce\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASalmon_with_Rice_and_Sauce&action=history), revision 4494430, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Salmon with Rice and Sauce\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Salmon_with_Rice_and_Sauce&action=history), revision 4494430, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 3,
    "servingSize": null,
    "prepMinutes": null,
@@ -10325,10 +11013,10 @@
    "title": "Sausage-Egg Breakfast Dish",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASausage-Egg_Breakfast_Dish",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Sausage-Egg_Breakfast_Dish",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Sausage-Egg Breakfast Dish\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASausage-Egg_Breakfast_Dish&action=history), revision 4525172, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Sausage-Egg Breakfast Dish\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Sausage-Egg_Breakfast_Dish&action=history), revision 4525172, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -10412,7 +11100,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-109475.jpg",
+    "file": "Sausage Breakfast Casserole.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Sausage_Breakfast_Casserole.jpg",
+    "artist": "User:MarkTraceur",
+    "license": "CC BY-SA 1.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/1.0"
+   }
   },
   {
    "id": "nhlbi-savory-potato-salad",
@@ -10549,6 +11245,14 @@
     "protein": 2,
     "carbs": 18,
     "potassium": 291
+   },
+   "photo": {
+    "image": "nhlbi-savory-potato-salad.jpg",
+    "file": "Potato salad-2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Potato_salad-2.jpg",
+    "artist": "jules",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -10556,10 +11260,10 @@
    "title": "Scottish Porridge",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AScottish_Porridge",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Scottish_Porridge",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Scottish Porridge\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AScottish_Porridge&action=history), revision 4654622, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Scottish Porridge\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Scottish_Porridge&action=history), revision 4654622, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -10638,17 +11342,25 @@
     "caffeine": null,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-484816.jpg",
+    "file": "Banana oatmeal 2.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Banana_oatmeal_2.jpg",
+    "artist": "Shisma",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "wikibooks-443384",
    "title": "Scrambled Eggs with Vegetables",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AScrambled_Eggs_with_Vegetables",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Scrambled_Eggs_with_Vegetables",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Scrambled Eggs with Vegetables\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AScrambled_Eggs_with_Vegetables&action=history), revision 4493922, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Scrambled Eggs with Vegetables\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Scrambled_Eggs_with_Vegetables&action=history), revision 4493922, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -10731,17 +11443,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-443384.jpg",
+    "file": "Scrambled eggs with cucumbers.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Scrambled_eggs_with_cucumbers.jpg",
+    "artist": "Zhou Yuji1028",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-15221",
    "title": "Shepherd's Pie II",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AShepherd's_Pie_II",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Shepherd's_Pie_II",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Shepherd's Pie II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AShepherd's_Pie_II&action=history), revision 4537924, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Shepherd's Pie II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Shepherd's_Pie_II&action=history), revision 4537924, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -10817,17 +11537,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-15221.jpg",
+    "file": "Shepherd's pie (22470901009).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Shepherd%27s_pie_(22470901009).jpg",
+    "artist": "Abhinaba Basu from Redmond, United States",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "wikibooks-252226",
    "title": "Smoked Salmon Breakfast Burrito",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASmoked_Salmon_Breakfast_Burrito",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Smoked_Salmon_Breakfast_Burrito",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Smoked Salmon Breakfast Burrito\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASmoked_Salmon_Breakfast_Burrito&action=history), revision 4523410, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Smoked Salmon Breakfast Burrito\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Smoked_Salmon_Breakfast_Burrito&action=history), revision 4523410, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -10921,17 +11649,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-252226.jpg",
+    "file": "Bacon Kale Breakfast Burrito (8429773809).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Bacon_Kale_Breakfast_Burrito_(8429773809).jpg",
+    "artist": "Cajsa Lilliehook from Portland",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-202116",
    "title": "Southwestern Black Beans and Rice",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASouthwestern_Black_Beans_and_Rice",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Southwestern_Black_Beans_and_Rice",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Southwestern Black Beans and Rice\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASouthwestern_Black_Beans_and_Rice&action=history), revision 4525238, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Southwestern Black Beans and Rice\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Southwestern_Black_Beans_and_Rice&action=history), revision 4525238, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -11005,17 +11741,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-202116.jpg",
+    "file": "Fried sticky rice with black beans, peas, and Salchichón sausage, plus soy sauce and black pepper - Massachusetts.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Fried_sticky_rice_with_black_beans,_peas,_and_Salchich%C3%B3n_sausage,_plus_soy_sauce_and_black_pepper_-_Massachusetts.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "wikibooks-15623",
    "title": "Spiced Pumpkin Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASpiced_Pumpkin_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Spiced_Pumpkin_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Spiced Pumpkin Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASpiced_Pumpkin_Soup&action=history), revision 4523308, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Spiced Pumpkin Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Spiced_Pumpkin_Soup&action=history), revision 4523308, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -11135,7 +11879,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-15623.jpg",
+    "file": "-2021-11-01 Bowl of homemade pumpkin soup, Trimingham, Norfolk.JPG",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:-2021-11-01_Bowl_of_homemade_pumpkin_soup,_Trimingham,_Norfolk.JPG",
+    "artist": "Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wikimedia project scope. This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original.https://creativecommons.org/licenses/by-sa/4.0CC BY-SA 4.0 Creative Commons Attribution-Share Alike 4.0 truetrue",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-spicy-southern-barbecued-chicken",
@@ -11271,6 +12023,14 @@
     "protein": 27,
     "carbs": 7,
     "potassium": 392
+   },
+   "photo": {
+    "image": "nhlbi-spicy-southern-barbecued-chicken.jpg",
+    "file": "Barbecued chicken drumsticks-02.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Barbecued_chicken_drumsticks-02.jpg",
+    "artist": "Diana from Pennsylvania USA",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -11278,10 +12038,10 @@
    "title": "Spicy Tomato Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASpicy_Tomato_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Spicy_Tomato_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Spicy Tomato Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASpicy_Tomato_Soup&action=history), revision 4525247, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Spicy Tomato Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Spicy_Tomato_Soup&action=history), revision 4525247, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -11370,17 +12130,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-108458.jpg",
+    "file": "Naam Ngiao spicy tomato soup - Night Market, Kad Suan Kaew.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Naam_Ngiao_spicy_tomato_soup_-_Night_Market,_Kad_Suan_Kaew.jpg",
+    "artist": "Alpha from Melbourne, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-246128",
    "title": "Spinach and Ricotta Lasagna",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASpinach_and_Ricotta_Lasagna",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Spinach_and_Ricotta_Lasagna",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Spinach and Ricotta Lasagna\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASpinach_and_Ricotta_Lasagna&action=history), revision 4605245, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Spinach and Ricotta Lasagna\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Spinach_and_Ricotta_Lasagna&action=history), revision 4605245, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 12,
    "servingSize": null,
    "prepMinutes": null,
@@ -11491,17 +12259,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-246128.jpg",
+    "file": "Spicy sausage and spinach lasagna, January 2007.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Spicy_sausage_and_spinach_lasagna,_January_2007.jpg",
+    "artist": "beccapie",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-480530",
    "title": "Spinach Mushroom Omelet",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ASpinach_Mushroom_Omelet",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Spinach_Mushroom_Omelet",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Spinach Mushroom Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ASpinach_Mushroom_Omelet&action=history), revision 4606145, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Spinach Mushroom Omelet\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Spinach_Mushroom_Omelet&action=history), revision 4606145, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 1,
    "servingSize": null,
    "prepMinutes": null,
@@ -11610,7 +12386,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-480530.jpg",
+    "file": "Nargesi omelette.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Nargesi_omelette.jpg",
+    "artist": "Reza babaeian",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "nhlbi-strawberry-banana-yogurt-parfait",
@@ -11713,6 +12497,14 @@
     "protein": 6,
     "carbs": 36,
     "potassium": 438
+   },
+   "photo": {
+    "image": "nhlbi-strawberry-banana-yogurt-parfait.jpg",
+    "file": "Seattle in July 2024 - 08.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Seattle_in_July_2024_-_08.jpg",
+    "artist": "Another Believer",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -11816,6 +12608,14 @@
     "protein": 6,
     "carbs": 24,
     "potassium": 483
+   },
+   "photo": {
+    "image": "nhlbi-summer-breeze-smoothie.jpg",
+    "file": "Strawberry smoothie with perls.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Strawberry_smoothie_with_perls.jpg",
+    "artist": "Anidae",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -11938,6 +12738,14 @@
     "sat_fat": 1,
     "cholesterol": 92,
     "sodium": 235
+   },
+   "photo": {
+    "image": "nhlbi-sweet-potato-custard.jpg",
+    "file": "Tofu pudding with peanut and sweet potato in Yingge, New Taipei.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tofu_pudding_with_peanut_and_sweet_potato_in_Yingge,_New_Taipei.jpg",
+    "artist": "Meng Weng Wong",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -11945,10 +12753,10 @@
    "title": "Tadka Dhal (Spiced Lentil Curry) II",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ATadka_Dhal_(Spiced_Lentil_Curry)_II",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Tadka_Dhal_(Spiced_Lentil_Curry)_II",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Tadka Dhal (Spiced Lentil Curry) II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ATadka_Dhal_(Spiced_Lentil_Curry)_II&action=history), revision 4615201, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Tadka Dhal (Spiced Lentil Curry) II\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Tadka_Dhal_(Spiced_Lentil_Curry)_II&action=history), revision 4615201, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 2,
    "servingSize": null,
    "prepMinutes": null,
@@ -12080,17 +12888,25 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-7279.jpg",
+    "file": "Red lentil curry soup.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Red_lentil_curry_soup.jpg",
+    "artist": "\"Chef\" at Cookipedia.co.uk",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "wikibooks-23258",
    "title": "Tea Eggs",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ATea_Eggs",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Tea_Eggs",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Tea Eggs\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ATea_Eggs&action=history), revision 4523484, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Tea Eggs\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Tea_Eggs&action=history), revision 4523484, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 3,
    "servingSize": null,
    "prepMinutes": null,
@@ -12173,17 +12989,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-23258.jpg",
+    "file": "Tea eggs ez.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tea_eggs_ez.jpg",
+    "artist": "Dllu",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-252232",
    "title": "Teriyaki Grilled Salmon Steaks",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ATeriyaki_Grilled_Salmon_Steaks",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Teriyaki_Grilled_Salmon_Steaks",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Teriyaki Grilled Salmon Steaks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ATeriyaki_Grilled_Salmon_Steaks&action=history), revision 4508862, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Teriyaki Grilled Salmon Steaks\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Teriyaki_Grilled_Salmon_Steaks&action=history), revision 4508862, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -12275,17 +13099,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-252232.jpg",
+    "file": "TERIYAKI SALMON SALAD - Jonny's 2025-05-27.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:TERIYAKI_SALMON_SALAD_-_Jonny%27s_2025-05-27.jpg",
+    "artist": "Andy Li",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+   }
   },
   {
    "id": "wikibooks-203961",
    "title": "Thai Grilled Chicken I",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AThai_Grilled_Chicken_I",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Thai_Grilled_Chicken_I",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Thai Grilled Chicken I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AThai_Grilled_Chicken_I&action=history), revision 4511528, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Thai Grilled Chicken I\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Thai_Grilled_Chicken_I&action=history), revision 4511528, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -12382,17 +13214,25 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-203961.jpg",
+    "file": "Grilled chicken in Thailand.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Grilled_chicken_in_Thailand.jpg",
+    "artist": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
   },
   {
    "id": "wikibooks-112960",
    "title": "Three Bean Confetti Salad",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AThree_Bean_Confetti_Salad",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Three_Bean_Confetti_Salad",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Three Bean Confetti Salad\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AThree_Bean_Confetti_Salad&action=history), revision 4525552, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Three Bean Confetti Salad\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Three_Bean_Confetti_Salad&action=history), revision 4525552, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 8,
    "servingSize": null,
    "prepMinutes": null,
@@ -12483,7 +13323,15 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-112960.jpg",
+    "file": "Flageolet bean salad recipe veg.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Flageolet_bean_salad_recipe_veg.jpg",
+    "artist": "Jerry Pank",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
+   }
   },
   {
    "id": "nhlbi-tropical-fruit-compote",
@@ -12594,6 +13442,14 @@
     "sat_fat": 0,
     "cholesterol": 0,
     "sodium": 3
+   },
+   "photo": {
+    "image": "nhlbi-tropical-fruit-compote.jpg",
+    "file": "Koh Mak, Thailand, Tropical breakfast, Fruit salad.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Koh_Mak,_Thailand,_Tropical_breakfast,_Fruit_salad.jpg",
+    "artist": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0"
    }
   },
   {
@@ -12601,10 +13457,10 @@
    "title": "Tuna Noodle Casserole",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ATuna_Noodle_Casserole",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Tuna_Noodle_Casserole",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Tuna Noodle Casserole\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ATuna_Noodle_Casserole&action=history), revision 4525571, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Tuna Noodle Casserole\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Tuna_Noodle_Casserole&action=history), revision 4525571, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 5,
    "servingSize": null,
    "prepMinutes": null,
@@ -12708,7 +13564,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-138030.jpg",
+    "file": "Tuna casserole.JPG",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tuna_casserole.JPG",
+    "artist": "BrokenSphere",
+    "license": "CC BY-SA 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0"
+   }
   },
   {
    "id": "nhlbi-turkey-and-beef-meatballs-whole",
@@ -12868,6 +13732,14 @@
     "protein": 28,
     "carbs": 37,
     "potassium": 194
+   },
+   "photo": {
+    "image": "nhlbi-turkey-and-beef-meatballs-whole.jpg",
+    "file": "Spaghetti and meatballs 1.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg",
+    "artist": "jeffreyw",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -13013,6 +13885,14 @@
     "protein": 35,
     "carbs": 47,
     "potassium": 734
+   },
+   "photo": {
+    "image": "nhlbi-turkey-bolognese-shell-pasta.jpg",
+    "file": "Ragu.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Ragu.jpg",
+    "artist": "Erikatrioschi",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -13138,6 +14018,14 @@
     "protein": 29,
     "carbs": 26,
     "potassium": 424
+   },
+   "photo": {
+    "image": "nhlbi-turkey-club-burger.jpg",
+    "file": "Mar-a-Lago Turkey Burger (4330642195).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Mar-a-Lago_Turkey_Burger_(4330642195).jpg",
+    "artist": "Miriam Kato",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -13145,10 +14033,10 @@
    "title": "Tuscan Bean Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3ATuscan_Bean_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Tuscan_Bean_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Tuscan Bean Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3ATuscan_Bean_Soup&action=history), revision 4515570, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Tuscan Bean Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Tuscan_Bean_Soup&action=history), revision 4515570, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -13284,7 +14172,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-113272.jpg",
+    "file": "Tuscan kale and white bean soup in personalized bowls with spoons on a decorative tree cross cut (16085794138).jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Tuscan_kale_and_white_bean_soup_in_personalized_bowls_with_spoons_on_a_decorative_tree_cross_cut_(16085794138).jpg",
+    "artist": "Personal Creations",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nhlbi-tuscan-beans-tomatoes-and-oregano",
@@ -13400,6 +14296,14 @@
     "protein": 12,
     "carbs": 35,
     "potassium": 731
+   },
+   "photo": {
+    "image": "nhlbi-tuscan-beans-tomatoes-and-oregano.jpg",
+    "file": "Red Speckled Kidney Beans.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Red_Speckled_Kidney_Beans.jpg",
+    "artist": "Sanjay Acharya",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -13542,6 +14446,14 @@
     "protein": 4,
     "carbs": 27,
     "potassium": 524
+   },
+   "photo": {
+    "image": "nhlbi-vegetable-stew.jpg",
+    "file": "Vegetable stew with fish.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Vegetable_stew_with_fish.jpg",
+    "artist": "daSupremo",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0"
    }
   },
   {
@@ -13549,10 +14461,10 @@
    "title": "Vegetarian Soft Tacos",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AVegetarian_Soft_Tacos",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Vegetarian_Soft_Tacos",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Vegetarian Soft Tacos\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AVegetarian_Soft_Tacos&action=history), revision 4518777, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Vegetarian Soft Tacos\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Vegetarian_Soft_Tacos&action=history), revision 4518777, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 4,
    "servingSize": null,
    "prepMinutes": null,
@@ -13680,7 +14592,15 @@
     "caffeine": null,
     "alcohol": null
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-8329.jpg",
+    "file": "Vegetarian tacos at Cabuche.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Vegetarian_tacos_at_Cabuche.jpg",
+    "artist": "https://www.flickr.com/photos/charlieontravel/",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
+   }
   },
   {
    "id": "nhlbi-vietnamese-fresh-spring-rolls-goi",
@@ -13792,6 +14712,14 @@
     "protein": 3,
     "carbs": 16,
     "potassium": 161
+   },
+   "photo": {
+    "image": "nhlbi-vietnamese-fresh-spring-rolls-goi.jpg",
+    "file": "Spring rolls with peanut sauce.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Spring_rolls_with_peanut_sauce.jpg",
+    "artist": "T.Tseng",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   },
   {
@@ -13923,10 +14851,10 @@
    "title": "Yellow Split Pea Soup",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AYellow_Split_Pea_Soup",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Yellow_Split_Pea_Soup",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Yellow Split Pea Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AYellow_Split_Pea_Soup&action=history), revision 4525778, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Yellow Split Pea Soup\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Yellow_Split_Pea_Soup&action=history), revision 4525778, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 6,
    "servingSize": null,
    "prepMinutes": null,
@@ -14013,17 +14941,25 @@
     "caffeine": 0,
     "alcohol": 0
    },
-   "nutritionNote": "Nutrition calculated from USDA data"
+   "nutritionNote": "Nutrition calculated from USDA data",
+   "photo": {
+    "image": "wikibooks-124634.jpg",
+    "file": "Yellow Split Pea Soup.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Yellow_Split_Pea_Soup.jpg",
+    "artist": "Qfamily",
+    "license": "CC BY-SA 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0"
+   }
   },
   {
    "id": "wikibooks-77026",
    "title": "Zucchini Bread",
    "summary": null,
    "source": "Wikibooks Cookbook",
-   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook%3AZucchini_Bread",
+   "sourceURL": "https://en.wikibooks.org/wiki/Cookbook:Zucchini_Bread",
    "license": "CC BY-SA 4.0",
    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-   "attribution": "\"Zucchini Bread\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook%3AZucchini_Bread&action=history), revision 4502092, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
+   "attribution": "\"Zucchini Bread\" by Wikibooks contributors (https://en.wikibooks.org/w/index.php?title=Cookbook:Zucchini_Bread&action=history), revision 4502092, CC BY-SA 4.0. Ingredient matching and nutrition added by LeanTrack.",
    "servings": 24,
    "servingSize": null,
    "prepMinutes": null,
@@ -14235,6 +15171,14 @@
     "protein": 3,
     "carbs": 6,
     "potassium": 79
+   },
+   "photo": {
+    "image": "nhlbi-zucchini-medley.jpg",
+    "file": "Smoked and sauteed squash and zucchini with tomatoes.jpg",
+    "pageURL": "https://commons.wikimedia.org/wiki/File:Smoked_and_sauteed_squash_and_zucchini_with_tomatoes.jpg",
+    "artist": "Wesley Fryer",
+    "license": "CC BY 2.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/2.0"
    }
   }
  ]

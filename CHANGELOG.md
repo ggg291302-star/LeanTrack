@@ -1,5 +1,14 @@
 # Changelog
 
+## Stage 2: Real data (no new IPA; the data is used in Stage 3)
+- Built-in USDA food database: 13,364 foods (Foundation, SR Legacy, FNDDS), 31,527 real portion sizes, 5.0 MB, offline
+- Common list: 172 everyday foods with default portions
+- Typo-tolerant search ("chiken brest" → chicken breast), about 16 ms per search on the simulator
+- 125 recipes: 54 NHLBI/NIH (public domain) + 71 Wikibooks (CC BY-SA 4.0). Nutrition per serving is calculated from USDA data.
+- Recipe photos from Wikimedia Commons (free licenses, credited)
+- CDC 2022 BMI-for-age data for children's BMI percentiles
+- `DATA_SOURCES.md`, and data tests (USDA spot-check, recipe sources/licenses/nutrition, search, CDC)
+
 ## v0.1 — Stage 1: build pipeline + empty app
 - XcodeGen project (`project.yml`), iOS 17+, bundle ID `com.ggg291302.leantrack`
 - Dark theme, custom 5-tab bar (Home, Diary, +, Progress, More) with placeholder screens

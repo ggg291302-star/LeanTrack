@@ -12,7 +12,7 @@ The app shows the same list under **Settings → About → Data Sources**.
 | CDC 2022 Extended BMI-for-Age data file | BMI percentiles for ages 2–19 | Public domain (U.S. government work) | 2026-10-11 |
 | NHLBI (NIH) Healthy Eating Recipes | 54 bundled recipes | Public domain (U.S. government work) | 2026-10-11 |
 | Wikibooks Cookbook | 71 bundled recipes | CC BY-SA 4.0 | 2026-10-11 |
-| Wikimedia Commons | Recipe photos | Per photo: public domain, CC0, CC BY or CC BY-SA | 2026-10-11 |
+| Wikimedia Commons | 118 recipe photos | Per photo: public domain, CC0, CC BY or CC BY-SA | 2026-10-11 |
 | NIST Handbook 44, Appendix C | Unit conversions (lb↔kg, oz↔g, in↔cm, fl oz↔ml) | Public domain (U.S. government work) | 2026-10-11 |
 
 Planned in later stages (added here when they're built): the USDA FoodData Central API and Open Food Facts (online and barcode search, Stage 3), and the published formulas and cut-offs for BMI, BMR and TDEE (Stage 4).
@@ -69,7 +69,9 @@ Ingredients without a measurable amount ("salt to taste", "optional", "a handful
 ## Recipe photos: Wikimedia Commons
 - **Source:** https://commons.wikimedia.org/, read through the official API (`scripts/recipes/fetch-photos.mjs`)
 - **Licenses:** only public domain, CC0, CC BY or CC BY-SA photos are used. The photographer and license of each photo are stored in `scripts/data/recipes/photos.json` and `recipes.json`, and shown under the photo in the app.
-- Photos show the dish in general, not the exact recipe as made by the source.
+- 118 of 125 recipes have a photo. Every pick was reviewed by eye, and 7 recipes show a food icon because no fitting free photo was found.
+- Licenses used: CC BY-SA 4.0 (36), CC BY 2.0 (34), CC BY-SA 2.0 (15), CC0 (11), CC BY-SA 3.0 (8), CC BY 4.0 (7), CC BY 3.0 (2), CC BY-SA 2.5 (2), public domain (2), CC BY-SA 1.0 (1).
+- Photos are resized to 480 px wide (allowed by all of these licenses). Each photo shows the dish in general, not the exact recipe as made by the source.
 
 ## Unit conversions: NIST
 - NIST Handbook 44, Appendix C (General Tables of Units of Measurement): 1 lb = 0.45359237 kg, 1 oz = 28.349523125 g, 1 in = 2.54 cm, 1 US fl oz = 29.5735295625 ml (exact definitions).
