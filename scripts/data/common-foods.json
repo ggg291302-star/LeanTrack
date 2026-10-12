@@ -1,0 +1,1034 @@
+[
+ {
+  "name": "Egg (whole)",
+  "fdcId": 2707152,
+  "amount": 1,
+  "unit": "egg"
+ },
+ {
+  "name": "Hard-boiled egg",
+  "fdcId": 2707154,
+  "amount": 1,
+  "unit": "egg"
+ },
+ {
+  "name": "Scrambled eggs",
+  "fdcId": 2707204,
+  "amount": 2,
+  "unit": "egg"
+ },
+ {
+  "name": "Fried egg",
+  "fdcId": 2707158,
+  "amount": 1,
+  "unit": "egg"
+ },
+ {
+  "name": "Egg whites",
+  "fdcId": 2707168,
+  "amount": 4,
+  "unit": "egg white"
+ },
+ {
+  "name": "Milk, whole",
+  "fdcId": 746782,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Milk, 2%",
+  "fdcId": 746778,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Milk, 1%",
+  "fdcId": 746772,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Milk, skim",
+  "fdcId": 746776,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Almond milk, unsweetened",
+  "fdcId": 2705409,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Soy milk, unsweetened",
+  "fdcId": 2705405,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Greek yogurt, plain nonfat",
+  "fdcId": 2705424,
+  "amount": 1,
+  "unit": "6 oz container"
+ },
+ {
+  "name": "Yogurt, plain whole milk",
+  "fdcId": 2259793,
+  "amount": 1,
+  "unit": "container (6 oz)"
+ },
+ {
+  "name": "Cottage cheese, low fat",
+  "fdcId": 328841,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Cheddar cheese",
+  "fdcId": 328637,
+  "amount": 1,
+  "unit": "slice (1 oz)"
+ },
+ {
+  "name": "Mozzarella, part-skim",
+  "fdcId": 329370,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Swiss cheese",
+  "fdcId": 2705735,
+  "amount": 1,
+  "unit": "slice"
+ },
+ {
+  "name": "American cheese",
+  "fdcId": 2705764,
+  "amount": 1,
+  "unit": "slice"
+ },
+ {
+  "name": "Parmesan, grated",
+  "fdcId": 325036,
+  "amount": 1,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Cream cheese",
+  "fdcId": 2705760,
+  "amount": 1,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Butter",
+  "fdcId": 2710155,
+  "amount": 1,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Sour cream",
+  "fdcId": 2705614,
+  "amount": 2,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Chicken breast (cooked)",
+  "fdcId": 171477,
+  "amount": 3,
+  "unit": "oz"
+ },
+ {
+  "name": "Chicken breast (raw)",
+  "fdcId": 2646170,
+  "amount": 4,
+  "unit": "oz"
+ },
+ {
+  "name": "Chicken thigh (cooked)",
+  "fdcId": 172388,
+  "amount": 1,
+  "unit": "thigh without skin"
+ },
+ {
+  "name": "Chicken drumstick",
+  "fdcId": 2706003,
+  "amount": 1,
+  "unit": "medium drumstick"
+ },
+ {
+  "name": "Rotisserie chicken",
+  "fdcId": 2705937,
+  "amount": 3,
+  "unit": "oz, cooked"
+ },
+ {
+  "name": "Ground turkey (cooked)",
+  "fdcId": 171506,
+  "amount": 3,
+  "unit": "oz"
+ },
+ {
+  "name": "Deli turkey",
+  "fdcId": 2706215,
+  "amount": 2,
+  "unit": "slice, NFS"
+ },
+ {
+  "name": "Ground beef 85% lean (cooked)",
+  "fdcId": 174032,
+  "amount": 1,
+  "unit": "patty (yield from 1/4 lb raw meat)"
+ },
+ {
+  "name": "Ground beef 90% lean (cooked)",
+  "fdcId": 174031,
+  "amount": 3,
+  "unit": "oz"
+ },
+ {
+  "name": "Sirloin steak (cooked)",
+  "fdcId": 173118,
+  "amount": 6,
+  "unit": "oz"
+ },
+ {
+  "name": "Pork chop (cooked)",
+  "fdcId": 168240,
+  "amount": 4,
+  "unit": "oz"
+ },
+ {
+  "name": "Bacon",
+  "fdcId": 2705889,
+  "amount": 3,
+  "unit": "medium slice (yield after cooking)"
+ },
+ {
+  "name": "Ham, sliced",
+  "fdcId": 2705878,
+  "amount": 1,
+  "unit": "regular/thin slice"
+ },
+ {
+  "name": "Sausage link",
+  "fdcId": 2706190,
+  "amount": 2,
+  "unit": "breakfast size link"
+ },
+ {
+  "name": "Hot dog (beef)",
+  "fdcId": 2706167,
+  "amount": 1,
+  "unit": "regular"
+ },
+ {
+  "name": "Salmon (cooked)",
+  "fdcId": 175168,
+  "amount": 4,
+  "unit": "oz"
+ },
+ {
+  "name": "Tuna, canned",
+  "fdcId": 2706311,
+  "amount": 1,
+  "unit": "standard can"
+ },
+ {
+  "name": "Shrimp (cooked)",
+  "fdcId": 175180,
+  "amount": 3,
+  "unit": "oz"
+ },
+ {
+  "name": "Tilapia (cooked)",
+  "fdcId": 175177,
+  "amount": 1,
+  "unit": "fillet"
+ },
+ {
+  "name": "Cod (cooked)",
+  "fdcId": 171956,
+  "amount": 4,
+  "unit": "oz"
+ },
+ {
+  "name": "White rice (cooked)",
+  "fdcId": 2708408,
+  "amount": 1,
+  "unit": "cup, cooked"
+ },
+ {
+  "name": "Brown rice (cooked)",
+  "fdcId": 2708414,
+  "amount": 1,
+  "unit": "cup, cooked"
+ },
+ {
+  "name": "Oats (dry)",
+  "fdcId": 2708489,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Oatmeal (cooked)",
+  "fdcId": 2708381,
+  "amount": 1,
+  "unit": "cup, cooked"
+ },
+ {
+  "name": "Pasta (cooked)",
+  "fdcId": 2708357,
+  "amount": 1,
+  "unit": "cup, cooked"
+ },
+ {
+  "name": "Whole wheat pasta (cooked)",
+  "fdcId": 2708358,
+  "amount": 1,
+  "unit": "cup, cooked"
+ },
+ {
+  "name": "Quinoa (cooked)",
+  "fdcId": 168917,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Whole wheat bread",
+  "fdcId": 2707709,
+  "amount": 1,
+  "unit": "medium or regular slice"
+ },
+ {
+  "name": "White bread",
+  "fdcId": 2707598,
+  "amount": 1,
+  "unit": "medium or regular slice"
+ },
+ {
+  "name": "Sourdough bread",
+  "fdcId": 2707646,
+  "amount": 1,
+  "unit": "medium or regular slice"
+ },
+ {
+  "name": "Bagel",
+  "fdcId": 2707684,
+  "amount": 1,
+  "unit": "regular"
+ },
+ {
+  "name": "English muffin",
+  "fdcId": 175063,
+  "amount": 1,
+  "unit": "muffin"
+ },
+ {
+  "name": "Flour tortilla",
+  "fdcId": 2707824,
+  "amount": 1,
+  "unit": "medium"
+ },
+ {
+  "name": "Corn tortilla",
+  "fdcId": 2707823,
+  "amount": 2,
+  "unit": "medium"
+ },
+ {
+  "name": "Pancakes",
+  "fdcId": 175009,
+  "amount": 3,
+  "unit": "pancake (4\" dia)"
+ },
+ {
+  "name": "Waffle",
+  "fdcId": 2708313,
+  "amount": 1,
+  "unit": "waffle"
+ },
+ {
+  "name": "Corn flakes",
+  "fdcId": 2708453,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Granola",
+  "fdcId": 2708461,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Cheerios",
+  "fdcId": 173884,
+  "amount": 1,
+  "unit": "cup (1 NLEA serving)"
+ },
+ {
+  "name": "Crackers, saltine",
+  "fdcId": 2708167,
+  "amount": 5,
+  "unit": "cracker"
+ },
+ {
+  "name": "Popcorn, air-popped",
+  "fdcId": 2708219,
+  "amount": 3,
+  "unit": "cup, popped"
+ },
+ {
+  "name": "Banana",
+  "fdcId": 2709224,
+  "amount": 1,
+  "unit": "banana"
+ },
+ {
+  "name": "Apple",
+  "fdcId": 171688,
+  "amount": 1,
+  "unit": "medium (3\" dia)"
+ },
+ {
+  "name": "Orange",
+  "fdcId": 169097,
+  "amount": 1,
+  "unit": "fruit (2-5/8\" dia)"
+ },
+ {
+  "name": "Strawberries",
+  "fdcId": 2346409,
+  "amount": 1,
+  "unit": "cup, whole"
+ },
+ {
+  "name": "Blueberries",
+  "fdcId": 2346411,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Raspberries",
+  "fdcId": 2346410,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Grapes",
+  "fdcId": 174683,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Watermelon",
+  "fdcId": 167765,
+  "amount": 1,
+  "unit": "cup, diced"
+ },
+ {
+  "name": "Cantaloupe",
+  "fdcId": 746770,
+  "amount": 1,
+  "unit": "cup, cubes"
+ },
+ {
+  "name": "Pineapple",
+  "fdcId": 2346398,
+  "amount": 1,
+  "unit": "cup, chunks"
+ },
+ {
+  "name": "Mango",
+  "fdcId": 169910,
+  "amount": 1,
+  "unit": "cup pieces"
+ },
+ {
+  "name": "Pear",
+  "fdcId": 169118,
+  "amount": 1,
+  "unit": "medium"
+ },
+ {
+  "name": "Peach",
+  "fdcId": 325430,
+  "amount": 1,
+  "unit": "medium (2-2/3\" dia)"
+ },
+ {
+  "name": "Kiwi",
+  "fdcId": 327046,
+  "amount": 1,
+  "unit": "fruit (2\" dia)"
+ },
+ {
+  "name": "Avocado",
+  "fdcId": 171705,
+  "amount": 0.5,
+  "unit": "avocado, NS as to Florida or California"
+ },
+ {
+  "name": "Raisins",
+  "fdcId": 168165,
+  "amount": 1,
+  "unit": "small box (1.5 oz)"
+ },
+ {
+  "name": "Clementine",
+  "fdcId": 169105,
+  "amount": 1,
+  "unit": "small (2-1/4\" dia)"
+ },
+ {
+  "name": "Broccoli (raw)",
+  "fdcId": 747447,
+  "amount": 1,
+  "unit": "cup chopped"
+ },
+ {
+  "name": "Broccoli (steamed)",
+  "fdcId": 169967,
+  "amount": 1,
+  "unit": "cup, chopped"
+ },
+ {
+  "name": "Spinach (raw)",
+  "fdcId": 2709614,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Carrot (raw)",
+  "fdcId": 2709660,
+  "amount": 1,
+  "unit": "regular carrot"
+ },
+ {
+  "name": "Baby carrots",
+  "fdcId": 2258587,
+  "amount": 8,
+  "unit": "medium"
+ },
+ {
+  "name": "Romaine lettuce",
+  "fdcId": 746769,
+  "amount": 2,
+  "unit": "cup shredded"
+ },
+ {
+  "name": "Tomato",
+  "fdcId": 170457,
+  "amount": 1,
+  "unit": "medium whole (2-3/5\" dia)"
+ },
+ {
+  "name": "Cucumber",
+  "fdcId": 2346406,
+  "amount": 1,
+  "unit": "cup slices"
+ },
+ {
+  "name": "Onion",
+  "fdcId": 170000,
+  "amount": 0.5,
+  "unit": "cup, chopped"
+ },
+ {
+  "name": "Bell pepper",
+  "fdcId": 2709801,
+  "amount": 1,
+  "unit": "regular"
+ },
+ {
+  "name": "Potato, baked",
+  "fdcId": 170093,
+  "amount": 1,
+  "unit": "potato medium"
+ },
+ {
+  "name": "Sweet potato, baked",
+  "fdcId": 168483,
+  "amount": 1,
+  "unit": "medium (2\" dia, 5\" long, raw)"
+ },
+ {
+  "name": "Green beans (cooked)",
+  "fdcId": 169141,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Corn on the cob",
+  "fdcId": 169999,
+  "amount": 1,
+  "unit": "ear medium (6-3/4\" to 7-1/2\" long)"
+ },
+ {
+  "name": "Peas (cooked)",
+  "fdcId": 170017,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Cauliflower",
+  "fdcId": 2685573,
+  "amount": 1,
+  "unit": "cup chopped (1/2\" pieces)"
+ },
+ {
+  "name": "Mushrooms",
+  "fdcId": 1999629,
+  "amount": 1,
+  "unit": "cup, pieces or slices"
+ },
+ {
+  "name": "Zucchini",
+  "fdcId": 169291,
+  "amount": 1,
+  "unit": "cup, chopped"
+ },
+ {
+  "name": "Celery",
+  "fdcId": 2346405,
+  "amount": 2,
+  "unit": "stalk, medium (7-1/2\" - 8\" long)"
+ },
+ {
+  "name": "Kale",
+  "fdcId": 323505,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Asparagus (cooked)",
+  "fdcId": 168390,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Cabbage",
+  "fdcId": 2346407,
+  "amount": 1,
+  "unit": "cup, chopped"
+ },
+ {
+  "name": "Lettuce",
+  "fdcId": 2709789,
+  "amount": 2,
+  "unit": "cup"
+ },
+ {
+  "name": "Black beans (cooked)",
+  "fdcId": 173735,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Kidney beans (cooked)",
+  "fdcId": 175194,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Chickpeas (canned)",
+  "fdcId": 173801,
+  "amount": 0.5,
+  "unit": "cup drained, rinsed"
+ },
+ {
+  "name": "Lentils (cooked)",
+  "fdcId": 172421,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Tofu, firm",
+  "fdcId": 172475,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Edamame",
+  "fdcId": 168411,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Hummus",
+  "fdcId": 321358,
+  "amount": 2,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Peanut butter",
+  "fdcId": 172470,
+  "amount": 2,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Almonds",
+  "fdcId": 2346393,
+  "amount": 1,
+  "unit": "oz (23 whole kernels)"
+ },
+ {
+  "name": "Walnuts",
+  "fdcId": 2346394,
+  "amount": 0.25,
+  "unit": "cup, chopped"
+ },
+ {
+  "name": "Peanuts",
+  "fdcId": 173806,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Cashews",
+  "fdcId": 170571,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Chia seeds",
+  "fdcId": 2710819,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Sunflower seeds",
+  "fdcId": 170563,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Olive oil",
+  "fdcId": 171413,
+  "amount": 1,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Canola oil",
+  "fdcId": 748278,
+  "amount": 1,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Mayonnaise",
+  "fdcId": 2710204,
+  "amount": 1,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Ranch dressing",
+  "fdcId": 2710212,
+  "amount": 2,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Italian dressing",
+  "fdcId": 171019,
+  "amount": 2,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Ketchup",
+  "fdcId": 2709733,
+  "amount": 1,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Mustard",
+  "fdcId": 2710085,
+  "amount": 1,
+  "unit": "packet"
+ },
+ {
+  "name": "Salsa",
+  "fdcId": 2709738,
+  "amount": 2,
+  "unit": "tablespoon"
+ },
+ {
+  "name": "Honey",
+  "fdcId": 169640,
+  "amount": 1,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Maple syrup",
+  "fdcId": 169661,
+  "amount": 1,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Sugar",
+  "fdcId": 746784,
+  "amount": 1,
+  "unit": "teaspoon"
+ },
+ {
+  "name": "Jam",
+  "fdcId": 169641,
+  "amount": 1,
+  "unit": "tbsp"
+ },
+ {
+  "name": "Potato chips",
+  "fdcId": 2709422,
+  "amount": 1,
+  "unit": "small single serving bag"
+ },
+ {
+  "name": "Tortilla chips",
+  "fdcId": 2708202,
+  "amount": 1,
+  "unit": "small single serving bag"
+ },
+ {
+  "name": "Pretzels",
+  "fdcId": 2708249,
+  "amount": 1,
+  "unit": "small single serving bag"
+ },
+ {
+  "name": "Dark chocolate",
+  "fdcId": 170273,
+  "amount": 1,
+  "unit": "oz"
+ },
+ {
+  "name": "Milk chocolate",
+  "fdcId": 167587,
+  "amount": 1,
+  "unit": "bar (1.55 oz)"
+ },
+ {
+  "name": "Chocolate chip cookie",
+  "fdcId": 2707909,
+  "amount": 1,
+  "unit": "medium cookie"
+ },
+ {
+  "name": "Vanilla ice cream",
+  "fdcId": 2705630,
+  "amount": 0.5,
+  "unit": "cup"
+ },
+ {
+  "name": "Granola bar",
+  "fdcId": 2708101,
+  "amount": 1,
+  "unit": "bar"
+ },
+ {
+  "name": "Protein bar",
+  "fdcId": 2708127,
+  "amount": 1,
+  "unit": "bar"
+ },
+ {
+  "name": "Rice cake",
+  "fdcId": 170250,
+  "amount": 1,
+  "unit": "cake"
+ },
+ {
+  "name": "Coffee, black",
+  "fdcId": 2710375,
+  "amount": 1,
+  "unit": "cup (8 fl oz)"
+ },
+ {
+  "name": "Coffee creamer",
+  "fdcId": 2705600,
+  "amount": 1,
+  "unit": "individual container"
+ },
+ {
+  "name": "Latte (12 fl oz)",
+  "fdcId": 2710386,
+  "amount": 1,
+  "unit": "small"
+ },
+ {
+  "name": "Tea, unsweetened",
+  "fdcId": 2710488,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Orange juice",
+  "fdcId": 2709186,
+  "amount": 8,
+  "unit": "fl oz (NFS)"
+ },
+ {
+  "name": "Apple juice",
+  "fdcId": 2709320,
+  "amount": 8,
+  "unit": "fl oz (NFS)"
+ },
+ {
+  "name": "Cola",
+  "fdcId": 2710541,
+  "amount": 1,
+  "unit": "can (12 fl oz)"
+ },
+ {
+  "name": "Diet cola",
+  "fdcId": 2710542,
+  "amount": 1,
+  "unit": "can (12 fl oz)"
+ },
+ {
+  "name": "Sports drink",
+  "fdcId": 2710771,
+  "amount": 1,
+  "unit": "bottle (20 fl oz)"
+ },
+ {
+  "name": "Protein shake",
+  "fdcId": 2710726,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Beer",
+  "fdcId": 2710616,
+  "amount": 1,
+  "unit": "can or bottle (12 fl oz)"
+ },
+ {
+  "name": "Light beer",
+  "fdcId": 2710617,
+  "amount": 1,
+  "unit": "can or bottle (12 fl oz)"
+ },
+ {
+  "name": "Red wine",
+  "fdcId": 2710688,
+  "amount": 1,
+  "unit": "glass"
+ },
+ {
+  "name": "Cheese pizza",
+  "fdcId": 2708616,
+  "amount": 1,
+  "unit": "piece, medium pizza"
+ },
+ {
+  "name": "Pepperoni pizza",
+  "fdcId": 2708640,
+  "amount": 1,
+  "unit": "piece, medium pizza"
+ },
+ {
+  "name": "Hamburger",
+  "fdcId": 2706921,
+  "amount": 1,
+  "unit": "hamburger"
+ },
+ {
+  "name": "Cheeseburger",
+  "fdcId": 2706889,
+  "amount": 1,
+  "unit": "cheeseburger"
+ },
+ {
+  "name": "French fries",
+  "fdcId": 2709461,
+  "amount": 1,
+  "unit": "small fast food order"
+ },
+ {
+  "name": "Chicken nuggets",
+  "fdcId": 2706093,
+  "amount": 6,
+  "unit": "nugget"
+ },
+ {
+  "name": "Bean & cheese burrito",
+  "fdcId": 2708548,
+  "amount": 1,
+  "unit": "small/regular"
+ },
+ {
+  "name": "Chicken burrito",
+  "fdcId": 2708543,
+  "amount": 1,
+  "unit": "small/regular"
+ },
+ {
+  "name": "Beef taco",
+  "fdcId": 2708515,
+  "amount": 1,
+  "unit": "small/regular"
+ },
+ {
+  "name": "Mac and cheese",
+  "fdcId": 2708811,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Spaghetti with meat sauce",
+  "fdcId": 2708838,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Lasagna with meat",
+  "fdcId": 2708753,
+  "amount": 1,
+  "unit": "piece (1/8 of 7\" x 12\", approx 3-1/2\" x 3\")"
+ },
+ {
+  "name": "Chicken noodle soup",
+  "fdcId": 2709148,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "Grilled cheese sandwich",
+  "fdcId": 2705804,
+  "amount": 1,
+  "unit": "sandwich"
+ },
+ {
+  "name": "PB&J sandwich",
+  "fdcId": 2707554,
+  "amount": 1,
+  "unit": "sandwich"
+ },
+ {
+  "name": "Turkey sandwich",
+  "fdcId": 2706983,
+  "amount": 1,
+  "unit": "regular"
+ },
+ {
+  "name": "Caesar salad",
+  "fdcId": 2709591,
+  "amount": 2,
+  "unit": "cup"
+ },
+ {
+  "name": "Fried rice",
+  "fdcId": 2708952,
+  "amount": 1,
+  "unit": "cup"
+ },
+ {
+  "name": "California roll",
+  "fdcId": 2708961,
+  "amount": 6,
+  "unit": "piece"
+ },
+ {
+  "name": "General Tso chicken",
+  "fdcId": 2706794,
+  "amount": 1,
+  "unit": "cup"
+ }
+]

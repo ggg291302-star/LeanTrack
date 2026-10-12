@@ -1,0 +1,96 @@
+{
+ "source": "USDA FoodData Central API v1 (https://api.nal.usda.gov/fdc/v1/foods), format=abridged",
+ "checked": "2026-10-12",
+ "foods": [
+  {
+   "fdcId": 171477,
+   "description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+   "dataType": "SR Legacy",
+   "protein": 31,
+   "fat": 3.57,
+   "carbs": 0,
+   "kcal": 165
+  },
+  {
+   "fdcId": 2709224,
+   "description": "Banana, raw",
+   "dataType": "Survey (FNDDS)",
+   "protein": 0.74,
+   "fat": 0.28,
+   "carbs": 22.7,
+   "kcal": 97
+  },
+  {
+   "fdcId": 2707152,
+   "description": "Egg, whole, raw",
+   "dataType": "Survey (FNDDS)",
+   "protein": 12.4,
+   "fat": 9.96,
+   "carbs": 0.96,
+   "kcal": 143
+  },
+  {
+   "fdcId": 175168,
+   "description": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+   "dataType": "SR Legacy",
+   "protein": 22.1,
+   "fat": 12.4,
+   "carbs": 0,
+   "kcal": 206
+  },
+  {
+   "fdcId": 321358,
+   "description": "Hummus, commercial",
+   "dataType": "Foundation",
+   "protein": 7.35,
+   "fat": 17.1,
+   "carbs": 14.9,
+   "kcal": 229
+  },
+  {
+   "fdcId": 746782,
+   "description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+   "dataType": "Foundation",
+   "protein": 3.27,
+   "fat": 3.2,
+   "carbs": 4.63,
+   "kcal": 60
+  },
+  {
+   "fdcId": 172470,
+   "description": "Peanut butter, smooth style, without salt",
+   "dataType": "SR Legacy",
+   "protein": 22.2,
+   "fat": 51.4,
+   "carbs": 22.3,
+   "kcal": 598
+  },
+  {
+   "fdcId": 2708616,
+   "description": "Pizza, cheese, from restaurant or fast food, medium crust",
+   "dataType": "Survey (FNDDS)",
+   "protein": 11.4,
+   "fat": 9.69,
+   "carbs": 33.3,
+   "kcal": 266
+  },
+  {
+   "fdcId": 168917,
+   "description": "Quinoa, cooked",
+   "dataType": "SR Legacy",
+   "protein": 4.4,
+   "fat": 1.92,
+   "carbs": 21.3,
+   "kcal": 120
+  },
+  {
+   "fdcId": 2708408,
+   "description": "Rice, white, cooked, no added fat",
+   "dataType": "Survey (FNDDS)",
+   "protein": 2.67,
+   "fat": 0.28,
+   "carbs": 28,
+   "kcal": 129
+  }
+ ]
+}

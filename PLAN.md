@@ -53,26 +53,34 @@ This file is the working checklist. Tick items as they're done so a future sessi
 - [x] Download screenshots with `gh run download` and compare them to the reference (Add Food is now full screen; the "+" was shrunk to match)
 - [x] `SIDELOAD-GUIDE.md` (download the IPA, Sideloadly + web iTunes/iCloud, Trust, Developer Mode, VPN & Device Management, 7-day re-sign, 3-app limit)
 - [x] `CHANGELOG.md`
-- [ ] Tag `v0.1`
-- [ ] **Success:** the owner opens the empty LeanTrack app on their iPhone
+- [x] Tag `v0.1`. Release built with 6/6 tests passing: https://github.com/ggg291302-star/LeanTrack/releases/tag/v0.1
+- [x] **Success:** the owner opened the empty LeanTrack app on their iPhone (2026-10-11): "so far, so good"
+
+**Owner feedback after v0.1 (2026-10-11):** wants barcode scanning, a working "Today ▾" picker, tappable BMI/Recipes/More rows, adding food in the Diary, and calorie/macro targets. All of these are already planned in Stages 3–4.
+**New request:** photo of food → calories. Plan (Stage 3): on-device Apple Vision `VNClassifyImageRequest` identifies the food → suggests matching USDA foods → the owner confirms the food and amount → calories come from USDA data. Portion size can't be measured from a photo. An optional cloud-AI upgrade (owner's own paid key) would be decided in Stage 3.
 
 ### Stage 2: Real data
-- [ ] `scripts/build-food-db`: download USDA FDC Foundation, SR Legacy and FNDDS (CC0), keep only the needed fields and portions, and write `LeanTrack/Resources/foods.sqlite` (report its size)
-- [ ] Raw downloads are git-ignored. The script and its output are committed.
-- [ ] Short display names, with the original USDA name and FDC ID kept for the detail screen
-- [ ] Forgiving search index (typos like "chiken brest")
-- [ ] Common list: about 150 everyday foods with sensible default portions
-- [ ] Recipes: at least 100 from public-domain (USDA/federal MyPlate Kitchen, checked per recipe) and CC BY-SA (Wikibooks Cookbook) sources, with ingredients mapped to USDA foods and nutrition per serving calculated by us
-- [ ] CDC BMI-for-age LMS data (2–19 years), bundled and cited, plus the CDC extended BMI method for very high values
-- [ ] `DATA_SOURCES.md` (URL, license, download date, use)
-- [ ] Data tests: 10 foods spot-checked against USDA, every recipe has a source and license, no recipe missing nutrition
-- [ ] Report: counts, file sizes, 10 sample foods, 5 sample recipes with sources
+- [x] `scripts/build-food-db.mjs`: downloads USDA FDC Foundation (2026-04), SR Legacy (2018-04) and FNDDS 2021–23 (2024-10), all CC0. Writes `LeanTrack/Resources/Data/foods.sqlite`: 13,364 foods, 31,527 portions, 5.0 MB. Uses Node's built-in `node:sqlite` and an own zip reader (no npm packages).
+- [x] Raw downloads are git-ignored (`scripts/.cache`). The scripts and their outputs are committed.
+- [x] Short display names (`shortName()`), with the original USDA name and FDC ID kept for the detail screen
+- [x] Forgiving search: `FoodSearchIndex.swift` (prefix + 1–2 typos + ranking). "chiken brest" → chicken breast.
+- [x] Common list: 172 foods (`scripts/data/common-foods.json`) with USDA default portions
+- [x] Recipes: 125 total = 54 NHLBI (NIH, public domain; MyPlate.gov was down on 2026-10-11) + 71 Wikibooks (CC BY-SA 4.0). Ingredients are matched to USDA foods by `scripts/recipes/build-recipes.mjs` (dictionary + hand fixes in `recipe-curation.mjs`), and nutrition per serving is calculated from USDA data. 9 Wikibooks picks were excluded because amounts weren't measurable.
+- [x] Recipe photos from Wikimedia Commons (owner request), free licenses only, with credits (`fetch-photos.mjs`)
+- [x] CDC BMI-for-age 2022 data file (L, M, S, sigma, P95) bundled and cited, with the loader `CDCGrowthData.swift`. The percentile math is Stage 4.
+- [x] `DATA_SOURCES.md`
+- [x] Data tests: 10 foods vs the USDA API fixture, every recipe has a source and license, no recipe missing nutrition, nutrition re-adds from ingredients, Common list resolves, search finds typos and is fast, CDC worked-example rows
+- [ ] Report to owner: counts, file sizes, 10 sample foods, 5 sample recipes with sources
+
+**How to rebuild the data** (on Windows, from the `LeanTrack` folder):
+`node scripts/build-food-db.mjs` → `node scripts/verify-foods.mjs` → `node scripts/fetch-cdc-bmi.mjs` → `node scripts/recipes/fetch-nhlbi.mjs` → `node scripts/recipes/fetch-wikibooks.mjs` → `node scripts/recipes/build-recipes.mjs` → `node scripts/recipes/fetch-photos.mjs` → `node scripts/recipes/build-recipes.mjs` (again, to attach photo credits)
 
 ### Stage 3: Food logging
 - [ ] First-launch setup (profile, goal, pace, units)
 - [ ] Home (ring, macro cards, remaining, today's meals, water card)
 - [ ] Diary (week strip, meal sections, edit, swipe-delete, long-press move/copy, copy from yesterday)
 - [ ] Add Food (Recent, Favorites, Common, Recipes, Brands; search; barcode via VisionKit + AVFoundation fallback; Open Food Facts → USDA Branded → create custom)
+- [ ] Photo food recognition (owner request): camera/photo → on-device Vision classification → matching USDA foods → confirm portion → log
 - [ ] Food / Meal Detail (donut, ingredients, serving picker with real USDA portions, meal picker, Add to Diary, "…" menu)
 - [ ] Recipes (search, filters, detail, scaler, log serving, favorite, open original, my own recipes, optional online section if the terms allow)
 - [ ] Custom foods, saved meals, Favorites, Recent

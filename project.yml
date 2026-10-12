@@ -26,6 +26,16 @@ targets:
     platform: iOS
     sources:
       - path: LeanTrack
+        excludes:
+          - "Resources/Data/**"
+          - "Resources/RecipePhotos/**"
+      # Bundled as folders, so the app finds them at Data/... and RecipePhotos/...
+      - path: LeanTrack/Resources/Data
+        type: folder
+        buildPhase: resources
+      - path: LeanTrack/Resources/RecipePhotos
+        type: folder
+        buildPhase: resources
     info:
       path: Config/LeanTrack-Info.plist
       properties:
@@ -59,6 +69,10 @@ targets:
     platform: iOS
     sources:
       - path: LeanTrackTests
+        excludes:
+          - "Fixtures/**"
+      - path: LeanTrackTests/Fixtures
+        buildPhase: resources
     dependencies:
       - target: LeanTrack
     settings:
