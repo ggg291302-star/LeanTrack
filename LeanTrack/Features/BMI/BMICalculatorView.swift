@@ -260,7 +260,7 @@ struct BMICalculatorView: View {
                 Link("CDC: Child and teen BMI categories", destination: URL(string: "https://www.cdc.gov/bmi/child-teen-calculator/bmi-categories.html")!)
                 Link("CDC: Extended BMI-for-age growth charts", destination: URL(string: "https://www.cdc.gov/growthcharts/extended-bmi.htm")!)
                 Link("WHO: Obesity and overweight", destination: URL(string: "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight")!)
-                Link("NIH NHLBI: Assessing your weight", destination: URL(string: "https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm")!)
+                Link("NIH NHLBI: Assessing your weight", destination: URL(string: "https://www.nhlbi.nih.gov/calculate-your-bmi")!)
             }
             .font(.subheadline)
         }

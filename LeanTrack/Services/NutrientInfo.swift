@@ -4,7 +4,7 @@ import Foundation
 ///
 /// Daily Values are the FDA's for adults and children 4 years and older
 /// (21 CFR 101.9(c)(8)(iv) and (c)(9), the 2016 Nutrition Facts label rule).
-struct NutrientInfo: Identifiable, Sendable {
+struct NutrientInfo: Identifiable {
     /// Same as the foods.sqlite column name ("sat_fat").
     let key: String
     let name: String

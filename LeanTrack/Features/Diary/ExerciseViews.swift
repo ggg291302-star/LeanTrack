@@ -17,7 +17,7 @@ struct ExerciseSheet: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Exercise") {
+                Section {
                     TextField("e.g. Walking", text: $name).accessibilityIdentifier("exercise.name")
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
@@ -29,6 +29,8 @@ struct ExerciseSheet: View {
                     LabeledContent("Minutes") { NumberField(placeholder: "min", value: $minutes, decimals: 0) }
                     LabeledContent("Calories burned") { NumberField(placeholder: "cal", value: $kcal, decimals: 0) }
                         .accessibilityIdentifier("exercise.kcal")
+                } header: {
+                    Text("Exercise")
                 } footer: {
                     Text("Use the number from your watch, app or machine. These are often higher than what you really burned, so adding them back to your goal is off by default (Goals → Calorie Goal).")
                 }

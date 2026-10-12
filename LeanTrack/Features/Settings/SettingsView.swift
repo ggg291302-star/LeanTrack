@@ -351,7 +351,7 @@ struct AIPhotoSettingsView: View {
                     .disabled(keyText.trimmingCharacters(in: .whitespaces).count < 20)
                 }
                 if let message { Text(message).font(.caption).foregroundStyle(Theme.textSecondary) }
-                Link("Get an API key from Anthropic", destination: URL(string: "https://console.anthropic.com/settings/keys")!)
+                Link("Get an API key from Anthropic", destination: URL(string: "https://platform.claude.com/settings/keys")!)
             } header: {
                 Text("Anthropic API key")
             } footer: {
