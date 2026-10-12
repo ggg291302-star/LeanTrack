@@ -62,8 +62,12 @@ struct Nutrients: Codable, Hashable, Sendable {
 
     /// These nutrients scaled from 100 g to `grams`. Missing values stay missing.
     func scaled(toGrams grams: Double) -> Nutrients {
+        scaled(by: grams / 100)
+    }
+
+    /// Every value multiplied by `factor` (e.g. 2 servings → 2).
+    func scaled(by factor: Double) -> Nutrients {
         var result = Nutrients()
-        let factor = grams / 100
         for path in Nutrients.allKeyPaths {
             result[keyPath: path] = self[keyPath: path].map { $0 * factor }
         }

@@ -25,6 +25,9 @@ final class FoodDatabase: @unchecked Sendable {
     let searchIndex: FoodSearchIndex
     /// Date the database was built and the USDA files it came from.
     let meta: [String: String]
+    /// The hand-picked Common list, in order.
+    let common: [CommonFood]
+    private let commonByFoodID: [Int: CommonFood]
 
     init(url: URL? = Bundle.main.url(forResource: "foods", withExtension: "sqlite", subdirectory: "Data")) throws {
         guard let url else { throw DatabaseError.missingFile }
@@ -51,9 +54,20 @@ final class FoodDatabase: @unchecked Sendable {
         }
         summaries = rows
 
-        var common: Set<Int> = []
-        Self.query(handle, "SELECT food_id FROM common") { stmt in common.insert(Int(sqlite3_column_int64(stmt, 0))) }
-        searchIndex = FoodSearchIndex(foods: rows, boosted: common)
+        var commonItems: [CommonFood] = []
+        Self.query(handle, "SELECT rank, food_id, name, portion_amount, portion_unit, portion_grams FROM common ORDER BY rank") { stmt in
+            commonItems.append(CommonFood(
+                rank: Int(sqlite3_column_int64(stmt, 0)),
+                foodID: Int(sqlite3_column_int64(stmt, 1)),
+                name: Self.text(stmt, 2) ?? "",
+                portion: Portion(amount: sqlite3_column_double(stmt, 3), unit: Self.text(stmt, 4) ?? "", grams: sqlite3_column_double(stmt, 5))
+            ))
+        }
+        common = commonItems
+        var byFood: [Int: CommonFood] = [:]
+        for item in commonItems where byFood[item.foodID] == nil { byFood[item.foodID] = item }
+        commonByFoodID = byFood
+        searchIndex = FoodSearchIndex(foods: rows, boosted: Set(commonItems.map(\.foodID)))
 
         var meta: [String: String] = [:]
         Self.query(handle, "SELECT key, value FROM meta") { stmt in
@@ -101,20 +115,10 @@ final class FoodDatabase: @unchecked Sendable {
     }
 
     /// The hand-picked Common list, in order.
-    func commonFoods() -> [CommonFood] {
-        lock.lock()
-        defer { lock.unlock() }
-        var items: [CommonFood] = []
-        Self.query(db, "SELECT rank, food_id, name, portion_amount, portion_unit, portion_grams FROM common ORDER BY rank") { stmt in
-            items.append(CommonFood(
-                rank: Int(sqlite3_column_int64(stmt, 0)),
-                foodID: Int(sqlite3_column_int64(stmt, 1)),
-                name: Self.text(stmt, 2) ?? "",
-                portion: Portion(amount: sqlite3_column_double(stmt, 3), unit: Self.text(stmt, 4) ?? "", grams: sqlite3_column_double(stmt, 5))
-            ))
-        }
-        return items
-    }
+    func commonFoods() -> [CommonFood] { common }
+
+    /// The Common-list entry for a food, if it has one (gives its everyday portion).
+    func commonEntry(foodID: Int) -> CommonFood? { commonByFoodID[foodID] }
 
     /// Fast, typo-tolerant search ("chiken brest" finds chicken breast).
     func search(_ text: String, limit: Int = 50) -> [FoodSummary] {

@@ -3,29 +3,31 @@ import SwiftUI
 /// Hosts the four tab screens plus the custom tab bar.
 /// Every tab stays alive while hidden, so switching tabs keeps your place.
 struct RootView: View {
-    @State private var selection: AppTab = .home
-    @State private var addFoodMeal: MealSlot?
+    @Environment(AppState.self) private var appState
 
     var body: some View {
+        @Bindable var appState = appState
         VStack(spacing: 0) {
             ZStack {
                 ForEach(AppTab.allCases) { tab in
                     screen(for: tab)
-                        .opacity(selection == tab ? 1 : 0)
-                        .allowsHitTesting(selection == tab)
-                        .accessibilityHidden(selection != tab)
+                        .opacity(appState.selectedTab == tab ? 1 : 0)
+                        .allowsHitTesting(appState.selectedTab == tab)
+                        .accessibilityHidden(appState.selectedTab != tab)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-            LTTabBar(selection: $selection) {
-                addFoodMeal = MealSlot.suggested(for: Date())
+            LTTabBar(selection: $appState.selectedTab) {
+                appState.addFoodMeal = MealSlot.suggested(for: Date())
             }
         }
         .background(Theme.background.ignoresSafeArea())
         .ignoresSafeArea(.keyboard, edges: .bottom)
-        .fullScreenCover(item: $addFoodMeal) { meal in
-            AddFoodView(meal: meal)
+        .overlay(alignment: .bottom) { toast }
+        .fullScreenCover(item: $appState.addFoodMeal) { meal in
+            AddFoodView(meal: meal, day: appState.selectedDay)
+                .environment(appState)
         }
     }
 
@@ -38,8 +40,19 @@ struct RootView: View {
         case .more: MoreView()
         }
     }
-}
 
-#Preview {
-    RootView().preferredColorScheme(.dark)
+    @ViewBuilder
+    private var toast: some View {
+        if let message = appState.toast {
+            Text(message)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.white)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(Theme.cardElevated, in: Capsule())
+                .padding(.bottom, 90)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+                .accessibilityAddTraits(.updatesFrequently)
+        }
+    }
 }
