@@ -74,9 +74,9 @@ struct LTTabBar: View {
     private var addButton: some View {
         Button(action: onAdd) {
             Image(systemName: "plus")
-                .font(.system(size: 22, weight: .semibold))
+                .font(.system(size: 20, weight: .semibold))
                 .foregroundStyle(.white)
-                .frame(width: 46, height: 46)
+                .frame(width: 42, height: 42)
                 .background(Theme.accent, in: Circle())
                 .shadow(color: Theme.accent.opacity(0.35), radius: 6, y: 2)
                 .frame(maxWidth: .infinity)

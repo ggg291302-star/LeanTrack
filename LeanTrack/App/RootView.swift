@@ -24,7 +24,7 @@ struct RootView: View {
         }
         .background(Theme.background.ignoresSafeArea())
         .ignoresSafeArea(.keyboard, edges: .bottom)
-        .sheet(item: $addFoodMeal) { meal in
+        .fullScreenCover(item: $addFoodMeal) { meal in
             AddFoodView(meal: meal)
         }
     }

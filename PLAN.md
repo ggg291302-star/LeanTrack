@@ -31,27 +31,28 @@ This file is the working checklist. Tick items as they're done so a future sessi
 
 ## Stages
 
-### Stage 0: Check and plan ✅ (waiting for owner OK)
+### Stage 0: Check and plan ✅
 - [x] Read `BUILD-PROMPT.md` and study `design-reference.webp`
 - [x] Ask for iPhone model and iOS version, GitHub account, public or private repo
 - [x] Check installed tools (git, node, gh, Sideloadly, iTunes/iCloud)
 - [x] Check the current GitHub runner images and Actions billing, and Sideloadly requirements
 - [x] Write `PLAN.md`
-- [ ] Owner: re-login to GitHub (`gh auth login`), swap iTunes/iCloud to the web versions
+- [x] Owner re-logged in to GitHub. (The terminal login prompt failed on Enter; running `gh auth login --web` in the background and having the owner type the code at github.com/login/device worked.)
+- [ ] Owner: swap iTunes/iCloud to the web versions if Sideloadly can't see the phone (see `SIDELOAD-GUIDE.md`)
 
 ### Stage 1: Build pipeline plus an empty app on the phone
-- [ ] `git init` inside `LeanTrack`, and verify `git rev-parse --show-toplevel` is `LeanTrack` (not `New folder (5)`)
-- [ ] `.gitignore` (raw USDA downloads, build output, `.DS_Store`, etc.)
-- [ ] XcodeGen `project.yml`: app target, unit-test target, UI-test target, iOS 17.0, bundle ID above
-- [ ] Minimal app: dark theme, 5-tab custom bar (Home, Diary, +, Progress, More) with empty screens
-- [ ] Original app icon (generated, no copied art)
-- [ ] Folder layout: `App/ Models/ Data/ Services/ Features/<Screen>/ DesignSystem/`
-- [ ] Demo-data launch argument (`-LTDemoData`) using an in-memory store, never the real store
-- [ ] GitHub Actions workflow: XcodeGen → unit + UI tests on the simulator → screenshots artifact → unsigned IPA artifact → Release on `v*` tags
-- [ ] Create the public GitHub repo with `gh` and push. The build must pass.
-- [ ] Download screenshots with `gh run download` and compare them to the reference
-- [ ] `SIDELOAD-GUIDE.md` (download the IPA, Sideloadly + web iTunes/iCloud, Trust, Developer Mode, VPN & Device Management, 7-day re-sign, 3-app limit)
-- [ ] `CHANGELOG.md`
+- [x] `git init` inside `LeanTrack`, and verify `git rev-parse --show-toplevel` is `LeanTrack` (not `New folder (5)`)
+- [x] `.gitignore` (raw USDA downloads, build output, `.DS_Store`, etc.). `design-reference.webp` stays local and isn't published.
+- [x] XcodeGen `project.yml`: app target, unit-test target, UI-test target, iOS 17.0, bundle ID above
+- [x] Minimal app: dark theme, 5-tab custom bar (Home, Diary, +, Progress, More) with empty screens
+- [x] Original app icon (`scripts/make-app-icon.mjs`, no copied art)
+- [x] Folder layout: `App/ Models/ Services/ Features/<Screen>/ DesignSystem/` (`Data/` arrives in Stage 2)
+- [x] Demo-data launch argument (`-LTDemoData`, compiled into Debug builds only). The in-memory store gets wired up in Stage 3 with SwiftData.
+- [x] GitHub Actions workflow: XcodeGen → unsigned IPA → unit + UI tests on the simulator → screenshots / IPA / logs artifacts → Release on `v*` tags
+- [x] Create the public GitHub repo with `gh` and push. First build passed (6/6 tests).
+- [x] Download screenshots with `gh run download` and compare them to the reference (Add Food is now full screen; the "+" was shrunk to match)
+- [x] `SIDELOAD-GUIDE.md` (download the IPA, Sideloadly + web iTunes/iCloud, Trust, Developer Mode, VPN & Device Management, 7-day re-sign, 3-app limit)
+- [x] `CHANGELOG.md`
 - [ ] Tag `v0.1`
 - [ ] **Success:** the owner opens the empty LeanTrack app on their iPhone
 
